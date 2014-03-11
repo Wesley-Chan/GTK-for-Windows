@@ -1,0 +1,96 @@
+This document shows how to setup a working building environment and how to
+build GTK+ and its dependencies from scratch.
+-------------------------------------------------------------------------------
+
+Requirements
+
+MSYS
+GNU findutils
+XML::Simple
+MinGW-w64 (with Python integrated)
+crypt
+NASM
+-------------------------------------------------------------------------------
+
+Instructions
+
+*Instructions for building environment*
+
+1.Download those packages listed above and place them in the right folders. If
+you don't know what to download and where to put, run 0_DOWNLOAD_ALL.bat to
+download them automatically.
+
+2.Make sure there's no directories named "MinGW" or "msys" in your C:\,
+because we're going to use them. If you formally installed them, please
+consider renaming them.
+
+3.Run INSTALL_ALL.bat and follow the instructions (usually just pressing any
+key), it will setup everything for you.
+
+4.When the prompt (finally) dismisses, you're ready to go.
+
+Alternatively, you can run the batch files listed in INSTALL_ALL.bat one by
+one manually.
+
+*Instructions for building the libraries*
+
+1.You should setup the building environment first. When you had that done,
+copy /libs the whole folder to your HDD (SSD or RAM disk is recommended).
+Let's assume you put /libs in D:\.
+
+2.Append a line to C:\msys\etc\fstab to tell MSYS where your /libs is. If you
+put /libs to D:\, just like step 1, then, execute the line below in Windows
+command line:
+echo D:/libs                /libs>> c:\msys\etc\fstab
+
+2.You should download all the source code tarballs of dependencies listed in
+/libs/BUILD_ALL.sh. If you don't know what and where to download, you could
+run /libs/DOWNLOAD_ALL.sh *IN MSYS SHELL* to download them automatically *LIKE
+THIS*:
+cd /libs
+./DOWNLOAD_ALL.sh
+Do NOT run it in other folders. Or it wouldn't detect the tarballs you've
+already downloaded and download them again and wrong places occured.
+A complete set of tarballs should look like this:
+/libs
+|
+|---/atk
+|   |---atk-2.11.90.tar.xz
+|
+|---/cairo
+|   |---cairo-1.12.16.tar.xz
+...
+|---/zlib
+|   |---zlib-1.2.8.tar.xz
+|   |---zlib.pc
+|
+|---atk.sh
+|---BUILD_ALL.sh
+...
+
+3.cd into the /libs folder and run BUILD_ALL.sh. Usually, this might take one
+or two hours depending on your computer.
+cd /libs
+./BUILD_ALL.sh
+
+Alternatively...OK, you know what I'm going to say. Run the scripts one by one
+following the sequence in "BUILD_ALL.sh".
+-------------------------------------------------------------------------------
+
+FAQ
+
+Q: How to open a Windows command line console?
+A: There're several ways to do that.
+   1.WinKey+R, and type "cmd", and then press Enter.
+   2.Click the Start at the down left conner of the desktop and find "Run".
+     type "cmd" and press Enter.
+   3.Go to C:\WINDOWS\system32\ and double click cmd.exe.
+
+Q: How to open a MSYS shell (bash)?
+A: Go to C:\msys\ and double click msys.bat.
+
+Q: How do I know if it's doing good?
+A: You can check the log files in /lib/logs any time you want.
+
+Q: Where's the building result?
+A: The binaries you built lies in /opt, i.e. C:\msys\opt.

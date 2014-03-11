@@ -1,0 +1,20 @@
+--- librsvg-2.40.1/rsvg-base.c
++++ librsvg-2.40.1/rsvg-base.c
+@@ -2191,7 +2191,7 @@
+     g_object_unref (base);
+ 
+     /* FIXME portability */
+-    cdir = canonicalize_file_name (dir);
++    cdir = _fullpath(NULL, dir, _MAX_PATH);
+     g_free (dir);
+     if (cdir == NULL)
+         goto deny;
+@@ -2201,7 +2201,7 @@
+         goto deny;
+ 
+     /* FIXME portability */
+-    cpath = canonicalize_file_name (path);
++    cpath = _fullpath(NULL, path, _MAX_PATH);
+     g_free (path);
+ 
+     if (cpath == NULL)

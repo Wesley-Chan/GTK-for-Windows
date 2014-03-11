@@ -1,0 +1,69 @@
+--- gtk+-3.11.8/gdk/Makefile
++++ gtk+-3.11.8/gdk/Makefile
+@@ -94,7 +94,7 @@
+ #	$(am__append_1) $(am__append_3) \
+ #	$(am__append_5) $(am__append_7) \
+ #	$(am__append_8)
+-am__append_6 = -Wl,win32/rc/gdk-win32-res.o -export-symbols $(srcdir)/gdk.def
++am__append_6 = -Wl,win32/rc/gdk-win32-res.o
+ am__append_7 = broadway/libgdk-broadway.la
+ #am__append_8 = wayland/libgdk-wayland.la
+ #am__append_9 = Gdk-3.0.gir
+@@ -741,7 +741,7 @@
+ libgdk_3_la_LIBADD = $(GDK_DEP_LIBS) $(am__append_1) $(am__append_3) \
+ 	$(am__append_5) $(am__append_7) $(am__append_8)
+ libgdk_3_la_LDFLAGS = $(LDADD) $(am__append_6)
+-libgdk_3_la_DEPENDENCIES = win32/libgdk-win32.la win32/rc/gdk-win32-res.o gdk.def
++libgdk_3_la_DEPENDENCIES = win32/libgdk-win32.la win32/rc/gdk-win32-res.o
+ #introspection_files = \
+ #	$(filter-out gdkkeysyms-compat.h, $(gdk_public_h_sources))	\
+ #	$(gdk_c_sources)	\
+@@ -1729,9 +1729,9 @@
+ 	$(CPP) -P - <$(top_srcdir)/build/win32/vs10/gdk.vcxproj.filtersin >$@
+ 	rm libgdk.vs10.sourcefiles.filters
+ 
+-install-data-local: install-ms-lib install-def-file
++install-data-local: install-ms-lib
+ 
+-uninstall-local: uninstall-ms-lib uninstall-def-file
++uninstall-local: uninstall-ms-lib
+ 	rm -f $(DESTDIR)$(configexecincludedir)/gdkconfig.h
+ 
+ # if srcdir!=builddir, clean out maintainer-clean files from builddir
+
+--- gtk+-3.11.8/gtk/Makefile
++++ gtk+-3.11.8/gtk/Makefile
+@@ -116,7 +116,7 @@
+ #am__append_15 = $(gtk_use_stub_c_sources)
+ am__append_16 = -lole32 -lgdi32 -lcomdlg32 -lwinspool -lcomctl32
+ am__append_17 = -Wl,-luuid
+-am__append_18 = $(gtk_def) $(gtk_win32_res) $(deps)
++am__append_18 = $(gtk_win32_res) $(deps)
+ 
+ # And include the regular ones:
+ ##am__append_19 = \
+@@ -1068,7 +1068,7 @@
+ 
+ no_undefined = -no-undefined
+ gtk_def = gtk.def
+-gtk_win32_symbols = -export-symbols $(srcdir)/gtk.def
++gtk_win32_symbols = 
+ gtk_win32_res = gtk-win32-res.o
+ gtk_win32_res_ldflag = -Wl,gtk-win32-res.o
+ #noinst_DATA = gtk-win32-$(GTK_API_VERSION).lib
+@@ -6108,13 +6108,13 @@
+ 	rm libgtk.vs10.sourcefiles.filters
+ 
+ # Install a RC file for the default GTK+ theme, and key themes
+-install-data-local: install-ms-lib install-def-file install-mac-key-theme
++install-data-local: install-ms-lib install-mac-key-theme
+ 	$(MKDIR_P) $(DESTDIR)$(datadir)/themes/Default/gtk-3.0
+ 	$(INSTALL_DATA) $(srcdir)/gtk-keys.css.default $(DESTDIR)$(datadir)/themes/Default/gtk-3.0/gtk-keys.css
+ 	$(MKDIR_P) $(DESTDIR)$(datadir)/themes/Emacs/gtk-3.0
+ 	$(INSTALL_DATA) $(srcdir)/gtk-keys.css.emacs $(DESTDIR)$(datadir)/themes/Emacs/gtk-3.0/gtk-keys.css
+ 
+-uninstall-local: uninstall-ms-lib uninstall-def-file uninstall-mac-key-theme
++uninstall-local: uninstall-ms-lib uninstall-mac-key-theme
+ 	rm -f $(DESTDIR)$(datadir)/themes/Raleigh/gtk-3.0/gtk.css
+ 	rm -f $(DESTDIR)$(datadir)/themes/Default/gtk-3.0/gtk-keys.css
+ 	rm -f $(DESTDIR)$(datadir)/themes/Emacs/gtk-3.0/gtk-keys.css
