@@ -18,6 +18,6 @@ This file shows you how to build GTK+ and its dependencies. Make sure you read `
         cd /libs
         ./BUILD_ALL.sh
 
-...Alternatively, run the scripts one by one following the sequence in `BUILD_ALL.sh`.
+   Alternatively, run the scripts one by one following the sequence in `BUILD_ALL.sh`.
 
 5. When the script stops, check the result. The building logs can also be found at `/libs/logs`.
