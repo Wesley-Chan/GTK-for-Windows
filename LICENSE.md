@@ -2,10 +2,12 @@
 
 ## [License for 7z.exe](http://www.7-zip.org/license.txt)
 7z.exe is an executable from www.7-zip.org by Igor Pavlov.
+
 [Source code](http://sourceforge.net/projects/sevenzip/files/7-Zip/9.20/7z920.tar.bz2/download)
 
 ## [License for wget.exe](https://www.gnu.org/copyleft/gpl.html)
 wget.exe is an executable built by me from the [source code](http://ftp.gnu.org/gnu/wget/wget-1.15.tar.xz) with a macro predefined in host.c.
+
     #define IN6_ARE_ADDR_EQUAL(a, b) (!memcmp ((const void*)(a), (const void*)(b), sizeof (struct in6_addr)))
 
 ## Shell scripts and batch files
