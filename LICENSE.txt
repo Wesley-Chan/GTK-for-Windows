@@ -6,6 +6,3 @@ GNU Wget. Licensed under GNU GPL v3.
 Souce code: http://ftp.gnu.org/gnu/wget/wget-1.15.tar.xz
 I compiled it with a macro predefined in host.c:
 #define IN6_ARE_ADDR_EQUAL(a, b) (!memcmp ((const void*)(a), (const void*)(b), sizeof (struct in6_addr)))
-
-Please see the COPYING or LICENSE files in the archives which are not
-mentioned here for their licenses in detial.
