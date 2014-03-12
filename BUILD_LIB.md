@@ -11,45 +11,11 @@ This file shows you how to build GTK+ and its dependencies. Make sure you read `
 3. Open a MSYS shell. Change the current directory to `/libs` and run `DOWNLOAD_ALL.sh` to download all the source code tarballs. 
 
         cd /libs
-
         ./DOWNLOAD_ALL.sh
-
-A complete set of tarballs should look like this:
-
-/libs
-
-|
-
-|---/atk
-
-|   |---atk-2.11.90.tar.xz
-
-|
-
-|---/cairo
-
-|   |---cairo-1.12.16.tar.xz
-
-...
-
-|---/zlib
-
-|   |---zlib-1.2.8.tar.xz
-
-|   |---zlib.pc
-
-|
-
-|---atk.sh
-
-|---BUILD\_ALL.sh
-
-...
 
 4. Run `BUILD\_ALL.sh`. Usually, this might take one to two hours depending on your computer.
 
         cd /libs
-
         ./BUILD_ALL.sh
 
 Alternatively, run the scripts one by one following the sequence in `BUILD\_ALL.sh`.
