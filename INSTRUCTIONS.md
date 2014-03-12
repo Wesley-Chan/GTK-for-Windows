@@ -7,7 +7,7 @@ This document shows you how to setup a working building environment and how to b
 First, setup a building environment. Second, build GTK+ and its dependencies.
 
 ### Instructions for setting up a building environment
-Please see `BUILD\_ENV.txt`.
+Please see `BUILD_ENV.txt`.
 
 ### Instructions for building the libraries
-Please see `BUILD\_LIB.txt`. You probably want to setup a building environment first if you haven't do so yet.
+Please see `BUILD_LIB.txt`. You probably want to setup a building environment first if you haven't do so yet.

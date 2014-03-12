@@ -13,11 +13,11 @@ This file shows you how to build GTK+ and its dependencies. Make sure you read `
         cd /libs
         ./DOWNLOAD_ALL.sh
 
-4. Run `BUILD\_ALL.sh`. Usually, this might take one to two hours depending on your computer.
+4. Run `BUILD_ALL.sh`. Usually, this might take one to two hours depending on your computer.
 
         cd /libs
         ./BUILD_ALL.sh
 
-Alternatively, run the scripts one by one following the sequence in `BUILD\_ALL.sh`.
+...Alternatively, run the scripts one by one following the sequence in `BUILD_ALL.sh`.
 
 5. When the script stops, check the result. The building logs can also be found at `/libs/logs`.

@@ -22,4 +22,4 @@ A: The binaries you built lies in `/opt`, i.e. `C:\msys\opt`.
 
 Q: I stopped the building halfway. What should I do?
 
-A: You can continue the building from where it stopped. Find out the last library it was building by checking the log files. Then delete the folder extracted from the tarball by its building script (e.g. `/libs/atk/atk-2.11.90/`) and run `BUILD\_ALL.sh` again after remarking the ones which are already built by adding a "#" to the start of the line.
+A: You can continue the building from where it stopped. Find out the last library it was building by checking the log files. Then delete the folder extracted from the tarball by its building script (e.g. `/libs/atk/atk-2.11.90/`) and run `BUILD_ALL.sh` again after remarking the ones which are already built by adding a "#" to the start of the line.
