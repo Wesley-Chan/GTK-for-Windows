@@ -1,6 +1,6 @@
 # Instructions for setting up a building environment
 
-This file shows you how to set up a building environment with MinGW-w64, MSYS and the other tools. Make sure you read `README.txt` before reading this.
+This file shows you how to set up a building environment with MinGW-w64, MSYS and the other tools. Make sure you read `README.md` before reading this.
 
 1. Go to `/z_Install`.
 

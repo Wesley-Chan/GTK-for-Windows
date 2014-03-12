@@ -1,6 +1,6 @@
 # Instructions for building the libraries
 
-This file shows you how to build GTK+ and its dependencies. Make sure you read `README.txt` and setup a building environment before doing this.
+This file shows you how to build GTK+ and its dependencies. Make sure you read `README.md` and setup a building environment before doing this.
 
 1. Copy `/libs` the whole folder to your HDD (SSD or RAM disk is recommended). Let's assume you put `/libs` in `D:\`. `D:\libs\` in other words.
 
