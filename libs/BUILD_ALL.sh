@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [ ! -f BUILD_ALL.sh ]
+then
+    echo Please run this script inside /libs. Thanks.
+    exit
+fi
+
 ./zlib.sh
 ./xz.sh
 ./crypt.sh

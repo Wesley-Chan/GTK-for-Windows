@@ -1,5 +1,11 @@
 @echo off
 
+if not exist 1b_findutils.bat (
+    @echo Please run this batch file inside /z_Install. Thanks.
+    @pause
+    exit /B 1
+)
+
 rem ***IMPORTANT***
 rem MSYS of MinGW-w64 project lacks find(GNU findutils) in /bin. Coincidentally, 
 rem Windows has a find.exe in its system directory. So, when libtool tries to

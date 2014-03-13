@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if [ ! -f DOWNLOAD_ALL.sh ]
+then
+    echo Please run this script inside /libs. Thanks.
+    exit
+fi
+
 ZLIB_DL_ADDR=http://prdownloads.sourceforge.net/libpng/zlib-1.2.8.tar.xz?download
 ZLIB_NAME=$(basename "$ZLIB_DL_ADDR" ?download)
 
@@ -18,7 +24,7 @@ INTLTOOL_NAME=$(basename "$INTLTOOL_DL_ADDR")
 LIBICONV_DL_ADDR=http://ftpmirror.gnu.org/libiconv/libiconv-1.14.tar.gz
 LIBICONV_NAME=$(basename "$LIBICONV_DL_ADDR")
 
-LIBXML2_DL_ADDR=ftp://xmlsoft.org/libxml2/libxml2-2.9.1.tar.gz
+LIBXML2_DL_ADDR=ftp://gd.tuwien.ac.at/pub/libxml/libxml2-2.9.1.tar.gz
 LIBXML2_NAME=$(basename "$LIBXML2_DL_ADDR")
 
 GETTEXT_DL_ADDR=http://ftpmirror.gnu.org/gettext/gettext-0.18.3.2.tar.gz

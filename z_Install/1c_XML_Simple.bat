@@ -1,5 +1,11 @@
 @echo off
 
+if not exist 1c_XML_Simple.bat (
+    @echo Please run this batch file inside /z_Install. Thanks.
+    @pause
+    exit /B 1
+)
+
 .\Tools\7z.exe x ..\Other\XML-Simple-2.20.tar.gz -o.\cache
 .\Tools\7z.exe x .\cache\XML-Simple-2.20.tar -o.\cache
 

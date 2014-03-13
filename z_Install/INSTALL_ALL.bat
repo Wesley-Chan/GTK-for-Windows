@@ -1,8 +1,14 @@
 @echo off
 
+if not exist INSTALL_ALL.bat (
+    @echo Please run this batch file inside /z_Install. Thanks.
+    @pause
+    exit /B 1
+)
+
 @echo Going to run 0_DOWNLOAD_ALL.bat
 call 0_DOWNLOAD_ALL.bat
-if errorlevel 1 goto EOF
+if errorlevel 1 exit /B 1
 
 @echo Going to run 1a_MSYS.bat
 call 1a_MSYS.bat
