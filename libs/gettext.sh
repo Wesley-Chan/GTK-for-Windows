@@ -18,9 +18,9 @@ make -j $NUMBER_OF_PROCESSORS -C gnulib-lib 2>&1 | tee -a ../../../logs/gettext-
 make -j $NUMBER_OF_PROCESSORS -C src msgfmt.exe 2>&1 | tee -a ../../../logs/gettext-tools-make.log
 make -j $NUMBER_OF_PROCESSORS -C src msgmerge.exe 2>&1 | tee -a ../../../logs/gettext-tools-make.log
 make -j $NUMBER_OF_PROCESSORS -C src xgettext.exe 2>&1 | tee -a ../../../logs/gettext-tools-make.log
-cp ./src/msgfmt.exe /mingw/bin/msgfmt.exe
-cp ./src/msgmerge.exe /mingw/bin/msgmerge.exe
-cp ./src/xgettext.exe /mingw/bin/xgettext.exe
+install ./src/msgfmt.exe $PREFIX/bin
+install ./src/msgmerge.exe $PREFIX/bin
+install ./src/xgettext.exe $PREFIX/bin
 
 cd ../..
 rm -rf gettext-0.18.3.2
