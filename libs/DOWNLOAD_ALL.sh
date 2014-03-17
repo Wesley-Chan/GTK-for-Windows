@@ -63,7 +63,7 @@ GDK_PIXBUF_NAME=$(basename "$GDK_PIXBUF_DL_ADDR")
 LIBFREETYPE_DL_ADDR=http://sourceforge.net/projects/freetype/files/freetype2/2.5.3/freetype-2.5.3.tar.bz2?download
 LIBFREETYPE_NAME=$(basename "$LIBFREETYPE_DL_ADDR" ?download)
 
-LIBFONTCONFIG_DL_ADDR=http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.0.tar.gz
+LIBFONTCONFIG_DL_ADDR=http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.0.tar.bz2
 LIBFONTCONFIG_NAME=$(basename "$LIBFONTCONFIG_DL_ADDR")
 
 PIXMAN_DL_ADDR=http://cairographics.org/releases/pixman-0.32.4.tar.gz

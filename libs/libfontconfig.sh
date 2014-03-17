@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd libfontconfig
-tar -xf fontconfig-2.11.0.tar.gz
+tar -xf fontconfig-2.11.0.tar.bz2
 cd fontconfig-2.11.0
 
 ./configure --disable-docs --prefix=$PREFIX 2>&1 | tee ../../logs/libfontconfig-configure.log
