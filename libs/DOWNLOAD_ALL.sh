@@ -12,9 +12,6 @@ ZLIB_NAME=$(basename "$ZLIB_DL_ADDR" ?download)
 XZ_DL_ADDR=http://tukaani.org/xz/xz-5.0.5.tar.xz
 XZ_NAME=$(basename "$XZ_DL_ADDR")
 
-CRYPT_DL_ADDR=http://lug.mtu.edu/cygwin/x86/release/crypt/crypt-1.2-1-src.tar.bz2
-CRYPT_NAME=$(basename "$CRYPT_DL_ADDR")
-
 EXPAT_DL_ADDR=http://sourceforge.net/projects/expat/files/expat/2.1.0/expat-2.1.0.tar.gz?download
 EXPAT_NAME=$(basename "$EXPAT_DL_ADDR" ?download)
 
@@ -107,10 +104,6 @@ cd ..
 
 cd xz
 check_existance $XZ_NAME $XZ_DL_ADDR
-cd ..
-
-cd crypt
-check_existance $CRYPT_NAME $CRYPT_DL_ADDR
 cd ..
 
 cd expat

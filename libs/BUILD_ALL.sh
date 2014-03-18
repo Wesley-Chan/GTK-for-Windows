@@ -8,7 +8,6 @@ fi
 
 ./zlib.sh
 ./xz.sh
-./crypt.sh
 ./expat.sh
 ./intltool.sh
 
