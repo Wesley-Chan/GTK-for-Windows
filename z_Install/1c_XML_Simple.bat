@@ -6,6 +6,7 @@ if not exist 1c_XML_Simple.bat (
     exit /B 1
 )
 
+rem This is needed to build icon-naming-utils.
 .\Tools\7z.exe x ..\Other\XML-Simple-2.20.tar.gz -o.\cache
 .\Tools\7z.exe x .\cache\XML-Simple-2.20.tar -o.\cache
 
