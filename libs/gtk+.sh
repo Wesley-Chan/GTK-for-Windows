@@ -4,7 +4,7 @@ cd gtk+
 tar -xf gtk+-3.11.8.tar.xz
 cd gtk+-3.11.8
 
-./configure --enable-static --enable-win32-backend --enable-broadway-backend --with-included-immodules --prefix=$PREFIX 2>&1 | tee ../../logs/gtk3-configure.log
+./configure --enable-win32-backend --enable-broadway-backend --with-included-immodules --prefix=$PREFIX 2>&1 | tee ../../logs/gtk3-configure.log
 
 #Patching build to avoid gdk.def and gtk.def...
 cd ..

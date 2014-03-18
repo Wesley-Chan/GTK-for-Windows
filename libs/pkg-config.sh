@@ -8,7 +8,7 @@ cd pkg-config-0.28
 export GLIB_CFLAGS="-I$PREFIX/include/glib-2.0 -I$PREFIX/lib/glib-2.0/include"
 export GLIB_LIBS=-lglib-2.0
 
-./configure --prefix=$PREFIX 2>&1 | tee ../../logs/pkg-config-configure.log
+./configure --disable-static --prefix=$PREFIX 2>&1 | tee ../../logs/pkg-config-configure.log
 make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/pkg-config-make.log
 make install 2>&1 | tee ../../logs/pkg-config-makeinstall.log
 

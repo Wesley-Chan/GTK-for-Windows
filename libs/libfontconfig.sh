@@ -4,7 +4,7 @@ cd libfontconfig
 tar -xf fontconfig-2.11.0.tar.bz2
 cd fontconfig-2.11.0
 
-./configure --disable-docs --prefix=$PREFIX 2>&1 | tee ../../logs/libfontconfig-configure.log
+./configure --disable-static --disable-docs --prefix=$PREFIX 2>&1 | tee ../../logs/libfontconfig-configure.log
 
 #test-migration.c is buggy when compiling with MinGW-w64 and we don't need it.
 cd ..

@@ -9,7 +9,7 @@ cd ..
 patch -p0 < jasper-1.900.1-win32_sleep.patch
 cd jasper-1.900.1
 
-./configure --enable-shared --enable-static --prefix=$PREFIX 2>&1 | tee ../../logs/libjasper-configure.log
+./configure --enable-shared --prefix=$PREFIX 2>&1 | tee ../../logs/libjasper-configure.log
 
 #Correct libtool for the undefined symbols problem,
 #which prevents shared DLL creation

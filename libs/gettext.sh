@@ -5,7 +5,7 @@ tar -xf gettext-0.18.3.2.tar.gz
 cd gettext-0.18.3.2
 
 cd gettext-runtime
-./configure --prefix=$PREFIX --with-libiconv-prefix=$PREFIX --enable-threads=windows --enable-relocatable 2>&1 | tee ../../../logs/gettext-runtime-configure.log
+./configure --disable-static --with-libiconv-prefix=$PREFIX --enable-threads=windows --enable-relocatable --prefix=$PREFIX 2>&1 | tee ../../../logs/gettext-runtime-configure.log
 make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../../logs/gettext-runtime-make.log
 make install 2>&1 | tee ../../../logs/gettext-runtime-makeinstall.log
 
