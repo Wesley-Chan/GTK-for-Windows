@@ -8,7 +8,7 @@ As everyone knows, the GTK+ Team doesn't release [GTK+ binaries for Windows](htt
 
 Now I'm going to ease the pain when building them.
 
-With this project, you can easily download all the tools needed and the source code tarballs from the internet, then again easily build them into binaries for Windows, on your own machine! All what I'm asking from you is just one to two hours. How? Please read `INSTRUCTIONS.md` for the details.
+With this project, you can easily download all the tools needed and the source code tarballs from the internet, then again easily build them into binaries for Windows, on your own machine! All what I'm asking from you is just one to two hours. Please refer to the [Wiki pages](https://github.com/Wesley-Chan/GTK-for-Windows/wiki) for more information.
 
 Since this project is always trying to make the latest GTK+ and its dependencies, which may have bugs, able to be built, the binaries comes out from the compiler and linker may be unstable, sometimes on the bleeding edge. It's for preview and test only. No warranty. If you're looking for a more stable one, please consider using the official release.
 
