@@ -1,4 +1,4 @@
-# GTK+ build system for Windows
+# GTK+ for Windows
 
 ## Introduction
 
