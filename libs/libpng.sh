@@ -1,12 +1,12 @@
 #!/bin/sh
 
 cd libpng
-tar -xf libpng-1.6.9.tar.xz
-cd libpng-1.6.9
+tar -xf libpng-1.6.10.tar.xz
+cd libpng-1.6.10
 
 ./configure --disable-static --prefix=$PREFIX 2>&1 | tee ../../logs/libpng-configure.log
 make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/libpng-make.log
 make install 2>&1 | tee ../../logs/libpng-makeinstall.log
 
 cd ..
-rm -rf libpng-1.6.9
+rm -rf libpng-1.6.10

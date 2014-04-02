@@ -1,5 +1,5 @@
---- gtk+-3.11.9/gdk/Makefile
-+++ gtk+-3.11.9/gdk/Makefile
+--- gtk+-3.12.0/gdk/Makefile
++++ gtk+-3.12.0/gdk/Makefile
 @@ -91,13 +91,13 @@
  am__append_4 = gdkkeynames.c
  am__append_5 = win32/libgdk-win32.la
@@ -49,8 +49,8 @@
  distclean-local:
  	if test $(srcdir) != .; then \
 
---- gtk+-3.11.9/gtk/Makefile
-+++ gtk+-3.11.9/gtk/Makefile
+--- gtk+-3.12.0/gtk/Makefile
++++ gtk+-3.12.0/gtk/Makefile
 @@ -113,13 +113,13 @@
  am__append_12 = $(gtk_use_win32_private_h_sources)
  #am__append_13 = $(gtk_use_quartz_c_sources)
@@ -74,7 +74,7 @@
  no_undefined = -no-undefined
  gtk_def = gtk.def
 -gtk_win32_symbols = -export-symbols $(srcdir)/gtk.def
-+gtk_win32_symbols = 
++gtk_win32_symbols =
  gtk_win32_res = gtk-win32-res.o
  gtk_win32_res_ldflag = -Wl,gtk-win32-res.o
  #noinst_DATA = gtk-win32-$(GTK_API_VERSION).lib

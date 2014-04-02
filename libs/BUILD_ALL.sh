@@ -42,3 +42,14 @@ fi
 ./hicolor-icon-theme.sh
 ./gnome-icon-theme.sh
 ./gnome-icon-theme-symbolic.sh
+
+echo GTK+ has been built. Continue to build gtkmm? [y/n]
+read ans
+if [ $ans == 'n' ]; then exit 0; fi
+
+./libsigc++.sh
+./glibmm.sh
+./atkmm.sh
+./cairomm.sh
+./pangomm.sh
+./gtkmm.sh
