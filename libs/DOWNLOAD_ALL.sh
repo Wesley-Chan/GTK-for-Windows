@@ -93,7 +93,7 @@ GNOME_ICON_THEME_SYMBOLIC_NAME=$(basename "$GNOME_ICON_THEME_SYMBOLIC_DL_ADDR")
 LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/2.3/libsigc++-2.3.1.tar.xz
 LIBSIGCPP_NAME=$(basename "$LIBSIGCPP_DL_ADDR")
 
-GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/2.39/glibmm-2.39.92.tar.xz
+GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/2.40/glibmm-2.40.0.tar.xz
 GLIBMM_NAME=$(basename "$GLIBMM_DL_ADDR")
 
 ATKMM_DL_ADDR=https://download.gnome.org/sources/atkmm/2.22/atkmm-2.22.7.tar.xz
@@ -105,7 +105,7 @@ CAIROMM_NAME=$(basename "$CAIROMM_DL_ADDR")
 PANGOMM_DL_ADDR=https://download.gnome.org/sources/pangomm/2.34/pangomm-2.34.0.tar.xz
 PANGOMM_NAME=$(basename "$PANGOMM_DL_ADDR")
 
-GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/3.11/gtkmm-3.11.9.tar.xz
+GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/3.12/gtkmm-3.12.0.tar.xz
 GTKMM_NAME=$(basename "$GTKMM_DL_ADDR")
 
 function check_existance()

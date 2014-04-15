@@ -1,11 +1,8 @@
 # GTK+ for Windows
 
 ## News
-GTK+ has updated to 3.12.0.
-
-Good news for those people who used to use gtkmm rather than GTK+, and can't wait to try the latest one! From now on, gtkmm is taken into this project. When the building of GTK+ has finished, just answer 'y' to move on building gtkmm binaries!
-
-gtkmm @ 3.11.9. Will have 3.12.0. Just wait for the official release of source code.
+GTK+ and gtkmm are both at 3.12.0.
+Yeah, I know that GTK+ 3.12.1 has been released. But I'll be kind of busy these two weeks and don't have time to make an update. Building them is not time consuming as long as it builds. The problem is, the build of it on Windows seems to be broken...I'll be back.
 
 ## Introduction
 
