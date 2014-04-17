@@ -1,5 +1,5 @@
---- jasper-1.900.1/src/appl/tmrdemo.c   2007-01-19 12:43:00 +0000
-+++ jasper-1.900.1/src/appl/tmrdemo.c   2012-11-29 09:43:00 +0000
+--- jasper-1.900.1/src/appl/tmrdemo.c
++++ jasper-1.900.1/src/appl/tmrdemo.c
 @@ -43,7 +43,7 @@
  	printf("zero time %.3f us\n", t * 1e6);
  
