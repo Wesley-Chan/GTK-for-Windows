@@ -39,7 +39,7 @@ PKG_CONFIG_NAME=$(basename "$PKG_CONFIG_DL_ADDR")
 LIBCROCO_DL_ADDR=https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.8.tar.xz
 LIBCROCO_NAME=$(basename "$LIBCROCO_DL_ADDR")
 
-ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.12/atk-2.12.0.tar.xz
+ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.13/atk-2.13.1.tar.xz
 ATK_NAME=$(basename "$ATK_DL_ADDR")
 
 LIBJASPER_DL_ADDR=http://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.1.zip
@@ -72,7 +72,7 @@ CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.3.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
-GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.12/gtk+-3.12.1.tar.xz
+GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.13/gtk+-3.13.1.tar.xz
 GTK_NAME=$(basename "$GTK_DL_ADDR")
 
 LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.2.tar.xz

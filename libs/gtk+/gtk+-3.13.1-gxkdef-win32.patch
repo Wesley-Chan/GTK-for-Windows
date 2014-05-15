@@ -1,0 +1,105 @@
+--- gtk+-3.13.1/gdk/Makefile.in
++++ gtk+-3.13.1/gdk/Makefile.in
+@@ -91,13 +91,13 @@
+ @USE_WIN32_TRUE@am__append_4 = gdkkeynames.c
+ @USE_WIN32_TRUE@am__append_5 = win32/libgdk-win32.la
+ @USE_WIN32_FALSE@libgdk_3_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+ @USE_WIN32_FALSE@	$(am__append_1) $(am__append_3) \
+ @USE_WIN32_FALSE@	$(am__append_5) $(am__append_7) \
+ @USE_WIN32_FALSE@	$(am__append_8)
+-@USE_WIN32_TRUE@am__append_6 = -Wl,win32/rc/gdk-win32-res.o -export-symbols $(srcdir)/gdk.def
++@USE_WIN32_TRUE@am__append_6 = -Wl,win32/rc/gdk-win32-res.o
+ @USE_BROADWAY_TRUE@am__append_7 = broadway/libgdk-broadway.la
+ @USE_WAYLAND_TRUE@am__append_8 = wayland/libgdk-wayland.la
+ @HAVE_INTROSPECTION_TRUE@am__append_9 = Gdk-3.0.gir
+ @HAVE_INTROSPECTION_TRUE@@OS_WIN32_TRUE@am__append_10 = -I$(srcdir)/win32 -I$(srcdir)
+ @HAVE_INTROSPECTION_TRUE@@USE_X11_TRUE@am__append_11 = GdkX11-3.0.gir
+ @HAVE_INTROSPECTION_TRUE@@OS_WIN32_TRUE@am__append_12 = GdkWin32-3.0.gir
+@@ -744,13 +744,13 @@
+ libgdk_3_la_SOURCES = $(common_sources) $(am__append_4)
+ libgdk_3_la_CFLAGS = $(AM_CFLAGS) $(GDK_HIDDEN_VISIBILITY_CFLAGS) \
+ 	$(am__append_2)
+ libgdk_3_la_LIBADD = $(GDK_DEP_LIBS) $(am__append_1) $(am__append_3) \
+ 	$(am__append_5) $(am__append_7) $(am__append_8)
+ libgdk_3_la_LDFLAGS = $(LDADD) $(am__append_6)
+-@USE_WIN32_TRUE@libgdk_3_la_DEPENDENCIES = win32/libgdk-win32.la win32/rc/gdk-win32-res.o gdk.def
++@USE_WIN32_TRUE@libgdk_3_la_DEPENDENCIES = win32/libgdk-win32.la win32/rc/gdk-win32-res.o
+ @HAVE_INTROSPECTION_TRUE@introspection_files = \
+ @HAVE_INTROSPECTION_TRUE@	$(filter-out gdkkeysyms-compat.h, $(gdk_public_h_sources))	\
+ @HAVE_INTROSPECTION_TRUE@	$(gdk_c_sources)	\
+ @HAVE_INTROSPECTION_TRUE@        gdkenumtypes.c		\
+ @HAVE_INTROSPECTION_TRUE@        gdkenumtypes.h
+ 
+@@ -1776,15 +1776,15 @@
+ 		     ;; \
+ 		esac; \
+ 	done >libgdk.vs10.sourcefiles.filters
+ 	$(CPP) -P - <$(top_srcdir)/build/win32/vs10/gdk.vcxproj.filtersin >$@
+ 	rm libgdk.vs10.sourcefiles.filters
+ 
+-install-data-local: install-ms-lib install-def-file
++install-data-local: install-ms-lib
+ 
+-uninstall-local: uninstall-ms-lib uninstall-def-file
++uninstall-local: uninstall-ms-lib
+ 	rm -f $(DESTDIR)$(configexecincludedir)/gdkconfig.h
+ 
+ # if srcdir!=builddir, clean out maintainer-clean files from builddir
+ # this allows dist to pass.
+ distclean-local:
+ 	if test $(srcdir) != .; then \
+
+--- gtk+-3.13.1/gtk/Makefile.in
++++ gtk+-3.13.1/gtk/Makefile.in
+@@ -113,13 +113,13 @@
+ @USE_WIN32_TRUE@am__append_12 = $(gtk_use_win32_private_h_sources)
+ @USE_QUARTZ_TRUE@am__append_13 = $(gtk_use_quartz_c_sources)
+ @USE_QUARTZ_TRUE@am__append_14 = $(gtk_use_quartz_private_h_sources)
+ @USE_QUARTZ_FALSE@@USE_WIN32_FALSE@@USE_X11_FALSE@am__append_15 = $(gtk_use_stub_c_sources)
+ @USE_WIN32_TRUE@am__append_16 = -lole32 -lgdi32 -lcomdlg32 -lwinspool -lcomctl32
+ @USE_WIN32_TRUE@am__append_17 = -Wl,-luuid
+-@USE_WIN32_TRUE@am__append_18 = $(gtk_def) $(gtk_win32_res) $(deps)
++@USE_WIN32_TRUE@am__append_18 = $(gtk_win32_res) $(deps)
+ 
+ # And include the regular ones:
+ @HAVE_INTROSPECTION_TRUE@@USE_QUARTZ_TRUE@am__append_19 = \
+ @HAVE_INTROSPECTION_TRUE@@USE_QUARTZ_TRUE@    gtkclipboard.c \
+ @HAVE_INTROSPECTION_TRUE@@USE_QUARTZ_TRUE@    gtkdnd.c
+ 
+@@ -1069,13 +1069,13 @@
+ 	$(GDK_HIDDEN_VISIBILITY_CFLAGS)			\
+ 	$(GTK_DEP_CFLAGS)				\
+ 	$(INCLUDED_IMMODULE_DEFINE)
+ 
+ @PLATFORM_WIN32_TRUE@no_undefined = -no-undefined
+ @OS_WIN32_TRUE@gtk_def = gtk.def
+-@OS_WIN32_TRUE@gtk_win32_symbols = -export-symbols $(srcdir)/gtk.def
++@OS_WIN32_TRUE@gtk_win32_symbols =
+ @OS_WIN32_TRUE@gtk_win32_res = gtk-win32-res.o
+ @OS_WIN32_TRUE@gtk_win32_res_ldflag = -Wl,gtk-win32-res.o
+ @MS_LIB_AVAILABLE_TRUE@noinst_DATA = gtk-win32-$(GTK_API_VERSION).lib
+ libgtkincludedir = $(includedir)/gtk-3.0/gtk
+ libadd = $(top_builddir)/gdk/libgdk-3.la \
+ 	$(top_builddir)/gtk/a11y/libgtka11y.la $(GMODULE_LIBS) \
+@@ -6119,19 +6119,19 @@
+ 		esac; \
+ 	done >libgtk.vs10.sourcefiles.filters
+ 	$(CPP) -P - <$(top_srcdir)/build/win32/vs10/gtk.vcxproj.filtersin >$@
+ 	rm libgtk.vs10.sourcefiles.filters
+ 
+ # Install a RC file for the default GTK+ theme, and key themes
+-install-data-local: install-ms-lib install-def-file install-mac-key-theme
++install-data-local: install-ms-lib install-mac-key-theme
+ 	$(MKDIR_P) $(DESTDIR)$(datadir)/themes/Default/gtk-3.0
+ 	$(INSTALL_DATA) $(srcdir)/gtk-keys.css.default $(DESTDIR)$(datadir)/themes/Default/gtk-3.0/gtk-keys.css
+ 	$(MKDIR_P) $(DESTDIR)$(datadir)/themes/Emacs/gtk-3.0
+ 	$(INSTALL_DATA) $(srcdir)/gtk-keys.css.emacs $(DESTDIR)$(datadir)/themes/Emacs/gtk-3.0/gtk-keys.css
+ 
+-uninstall-local: uninstall-ms-lib uninstall-def-file uninstall-mac-key-theme
++uninstall-local: uninstall-ms-lib uninstall-mac-key-theme
+ 	rm -f $(DESTDIR)$(datadir)/themes/Raleigh/gtk-3.0/gtk.css
+ 	rm -f $(DESTDIR)$(datadir)/themes/Default/gtk-3.0/gtk-keys.css
+ 	rm -f $(DESTDIR)$(datadir)/themes/Emacs/gtk-3.0/gtk-keys.css
+ 
+ # if srcdir!=builddir, clean out maintainer-clean files from builddir
+ # this allows dist to pass.

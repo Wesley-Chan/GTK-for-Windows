@@ -1,0 +1,17 @@
+--- atk-2.13.1/atk/Makefile.in
++++ atk-2.13.1/atk/Makefile.in
+@@ -81,13 +81,13 @@
+ build_triplet = @build@
+ host_triplet = @host@
+ @HAVE_INTROSPECTION_TRUE@am__append_1 = Atk-1.0.gir
+ @HAVE_INTROSPECTION_TRUE@am__append_2 = $(gir_DATA) $(typelibs_DATA)
+ 
+ # ---------- Win32 stuff ----------
+-@OS_WIN32_TRUE@am__append_3 = -export-symbols atk.def -no-undefined -Wl,atk-win32-res.o
++@OS_WIN32_TRUE@am__append_3 = -no-undefined -Wl,atk-win32-res.o
+ @OS_WIN32_FALSE@libatk_1_0_la_DEPENDENCIES = $(am__DEPENDENCIES_1) \
+ @OS_WIN32_FALSE@	$(am__DEPENDENCIES_1)
+ subdir = atk
+ DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
+ 	$(srcdir)/atk.rc.in $(srcdir)/atkversion.h.in \
+ 	$(top_srcdir)/depcomp $(libatkinclude_HEADERS)
