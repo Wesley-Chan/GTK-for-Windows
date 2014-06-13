@@ -1,5 +1,5 @@
---- atk-2.13.1/atk/Makefile.in
-+++ atk-2.13.1/atk/Makefile.in
+--- atk-2.13.2/atk/Makefile.in
++++ atk-2.13.2/atk/Makefile.in
 @@ -81,13 +81,13 @@
  build_triplet = @build@
  host_triplet = @host@

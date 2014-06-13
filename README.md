@@ -1,7 +1,7 @@
 # GTK+ for Windows
 
 ## News
-GTK+ at 3.13.1 and gtkmm at 3.12.0.
+GTK+ at 3.13.2 and gtkmm at 3.13.2.
 
 ## Introduction
 
