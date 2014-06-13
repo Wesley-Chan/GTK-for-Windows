@@ -39,7 +39,7 @@ PKG_CONFIG_NAME=$(basename "$PKG_CONFIG_DL_ADDR")
 LIBCROCO_DL_ADDR=https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.8.tar.xz
 LIBCROCO_NAME=$(basename "$LIBCROCO_DL_ADDR")
 
-ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.13/atk-2.13.1.tar.xz
+ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.13/atk-2.13.2.tar.xz
 ATK_NAME=$(basename "$ATK_DL_ADDR")
 
 LIBJASPER_DL_ADDR=http://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.1.zip
