@@ -30,7 +30,7 @@ GETTEXT_NAME=$(basename "$GETTEXT_DL_ADDR")
 LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz
 LIBFFI_NAME=$(basename "$LIBFFI_DL_ADDR")
 
-GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.41/glib-2.41.0.tar.xz
+GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.41/glib-2.41.1.tar.xz
 GLIB_NAME=$(basename "$GLIB_DL_ADDR")
 
 PKG_CONFIG_DL_ADDR=http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
@@ -72,7 +72,7 @@ CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.3.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
-GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.13/gtk+-3.13.2.tar.xz
+GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.13/gtk+-3.13.3.tar.xz
 GTK_NAME=$(basename "$GTK_DL_ADDR")
 
 LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.2.tar.xz
@@ -93,7 +93,7 @@ GNOME_ICON_THEME_SYMBOLIC_NAME=$(basename "$GNOME_ICON_THEME_SYMBOLIC_DL_ADDR")
 LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/2.3/libsigc++-2.3.1.tar.xz
 LIBSIGCPP_NAME=$(basename "$LIBSIGCPP_DL_ADDR")
 
-GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/2.41/glibmm-2.41.0.tar.xz
+GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/2.41/glibmm-2.41.1.tar.xz
 GLIBMM_NAME=$(basename "$GLIBMM_DL_ADDR")
 
 ATKMM_DL_ADDR=https://download.gnome.org/sources/atkmm/2.22/atkmm-2.22.7.tar.xz
@@ -105,7 +105,7 @@ CAIROMM_NAME=$(basename "$CAIROMM_DL_ADDR")
 PANGOMM_DL_ADDR=https://download.gnome.org/sources/pangomm/2.34/pangomm-2.34.0.tar.xz
 PANGOMM_NAME=$(basename "$PANGOMM_DL_ADDR")
 
-GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/3.13/gtkmm-3.13.2.tar.xz
+GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/3.13/gtkmm-3.13.3.tar.xz
 GTKMM_NAME=$(basename "$GTKMM_DL_ADDR")
 
 function check_existance()
