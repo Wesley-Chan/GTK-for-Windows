@@ -3,6 +3,10 @@
 ## News
 GTK+ at 3.13.3 and gtkmm at 3.13.3.
 
+Aug. 6th, 2014 update:
+
+Sorry guys. I'm kind of busy these two weeks. I'll update to 3.13.5 as soon as possible.
+
 ## Introduction
 
 This project is intended to make the latest [GTK+](http://www.gtk.org) available on Windows.
