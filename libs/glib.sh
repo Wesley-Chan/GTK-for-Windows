@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd glib
-tar -xf glib-2.41.1.tar.xz
-cd glib-2.41.1
+tar -xf glib-2.41.2.tar.xz
+cd glib-2.41.2
 
 #To avoid using pkg-config.
 export LIBFFI_CFLAGS=-I"$PREFIX/lib/libffi-3.0.13/include"
@@ -13,4 +13,4 @@ make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/glib-make.log
 make install 2>&1 | tee ../../logs/glib-makeinstall.log
 
 cd ..
-rm -rf glib-2.41.1
+rm -rf glib-2.41.2

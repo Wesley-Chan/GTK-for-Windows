@@ -1,11 +1,7 @@
 # GTK+ for Windows
 
 ## News
-GTK+ at 3.13.3 and gtkmm at 3.13.3.
-
-Aug. 6th, 2014 update:
-
-Sorry guys. I'm kind of busy these two weeks. I'll update to 3.13.5 as soon as possible.
+GTK+ & gtkmm are both at 3.13.5.
 
 ## Introduction
 
