@@ -17,9 +17,9 @@ Since this project is always trying to make the latest GTK+ and its dependencies
 
 ## Content
 
-This project provide you only scripts. Yes. I don't ship tools and source code to you because of three reasons.
+This project provides you only scripts. Yes. I don't ship tools and source code to you because of three reasons.
 
-1. Tools and source code tarballs are too large (219MB with everything) to be held online and to be downloaded.
+1. Tools and source code tarballs are too large (398MB with everything) to be held online and to be downloaded.
 
 2. This project keeps updated with the latest source code. It will be changing rapidly. It's painful to remove the old source code tarballs and upload/download the new ones.
 
@@ -29,7 +29,7 @@ So I suppose the best idea is to keep the size of this project as small as possi
 
 * `/libs`
 
-This folder kepps the source code tarballs (but empty for now) and downloading/building scripts.
+This folder keeps the source code tarballs (but empty for now) and downloading/building scripts.
 
 * `/MinGW-w64`
 
