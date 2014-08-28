@@ -39,9 +39,7 @@ fi
 ./librsvg.sh
 
 ./icon-naming-utils.sh
-./hicolor-icon-theme.sh
-./gnome-icon-theme.sh
-./gnome-icon-theme-symbolic.sh
+./adwaita-icon-theme.sh
 
 echo GTK+ has been built. Continue to build gtkmm? [y/n]
 read ans

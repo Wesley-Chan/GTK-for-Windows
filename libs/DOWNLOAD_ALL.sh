@@ -81,14 +81,8 @@ LIBRSVG_NAME=$(basename "$LIBRSVG_DL_ADDR")
 ICON_NAMING_UTILS_DL_ADDR=http://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
 ICON_NAMING_UTILS_NAME=$(basename "$ICON_NAMING_UTILS_DL_ADDR")
 
-HICOLOR_ICON_THEME_DL_ADDR=http://icon-theme.freedesktop.org/releases/hicolor-icon-theme-0.13.tar.gz
-HICOLOR_ICON_THEME_NAME=$(basename "$HICOLOR_ICON_THEME_DL_ADDR")
-
-GNOME_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/gnome-icon-theme/3.12/gnome-icon-theme-3.12.0.tar.xz
-GNOME_ICON_THEME_NAME=$(basename "$GNOME_ICON_THEME_DL_ADDR")
-
-GNOME_ICON_THEME_SYMBOLIC_DL_ADDR=https://download.gnome.org/sources/gnome-icon-theme-symbolic/3.12/gnome-icon-theme-symbolic-3.12.0.tar.xz
-GNOME_ICON_THEME_SYMBOLIC_NAME=$(basename "$GNOME_ICON_THEME_SYMBOLIC_DL_ADDR")
+ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/3.13/adwaita-icon-theme-3.13.5.tar.xz
+ADWAITA_ICON_THEME_NAME=$(basename "$ADWAITA_ICON_THEME_DL_ADDR")
 
 LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/2.3/libsigc++-2.3.1.tar.xz
 LIBSIGCPP_NAME=$(basename "$LIBSIGCPP_DL_ADDR")
@@ -216,16 +210,8 @@ cd icon-naming-utils
 check_existance $ICON_NAMING_UTILS_NAME $ICON_NAMING_UTILS_DL_ADDR
 cd ..
 
-cd hicolor-icon-theme
-check_existance $HICOLOR_ICON_THEME_NAME $HICOLOR_ICON_THEME_DL_ADDR
-cd ..
-
-cd gnome-icon-theme
-check_existance $GNOME_ICON_THEME_NAME $GNOME_ICON_THEME_DL_ADDR
-cd ..
-
-cd gnome-icon-theme-symbolic
-check_existance $GNOME_ICON_THEME_SYMBOLIC_NAME $GNOME_ICON_THEME_SYMBOLIC_DL_ADDR
+cd adwaita-icon-theme
+check_existance $ADWAITA_ICON_THEME_NAME $ADWAITA_ICON_THEME_DL_ADDR
 cd ..
 
 cd libsigc++
