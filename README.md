@@ -1,7 +1,7 @@
 # GTK+ for Windows
 
 ## News
-GTK+ & gtkmm are both at 3.13.7.
+GTK+ & gtkmm are both at 3.13.8.
 
 ## Introduction
 
