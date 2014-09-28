@@ -69,7 +69,7 @@ PIXMAN_NAME=$(basename "$PIXMAN_DL_ADDR")
 CAIRO_DL_ADDR=http://cairographics.org/releases/cairo-1.12.16.tar.xz
 CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 
-PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.6.tar.xz
+PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.8.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
 GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.14/gtk+-3.14.0.tar.xz
