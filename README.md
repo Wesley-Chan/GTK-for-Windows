@@ -3,6 +3,14 @@
 ## News
 GTK+ & gtkmm are both at 3.14.0.
 
+Update at 10/30/2014.
+
+Hey guys. I just want to let you know that, I'm still keeping an eye on this. But as you may already know, since gtkmm 3.14.0, there's a huge lag between GTK+ and gtkmm. gtkmm is often released two weeks after GTK+ and this time, GTK+ is just updating too fast for gtkmm to catch up.
+
+3 fast 5 him.
+
+Let's keep watching.
+
 ## Introduction
 
 This project is intended to make the latest [GTK+](http://www.gtk.org) available on Windows.
