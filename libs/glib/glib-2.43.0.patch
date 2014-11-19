@@ -1,0 +1,129 @@
+--- librsvg-2.40.5/rsvg-base.c
++++ librsvg-2.40.5/rsvg-base.c
+@@ -2207,22 +2207,22 @@
+     if (base == NULL)
+         goto deny;
+ 
+     dir = g_file_get_path (base);
+     g_object_unref (base);
+ 
+-    cdir = realpath (dir, NULL);
++    cdir = _fullpath (NULL, dir, _MAX_PATH);
+     g_free (dir);
+     if (cdir == NULL)
+         goto deny;
+ 
+     path = g_filename_from_uri (uri, NULL, NULL);
+     if (path == NULL)
+         goto deny;
+ 
+-    cpath = realpath (path, NULL);
++    cpath = _fullpath (NULL, path, _MAX_PATH);
+     g_free (path);
+ 
+     if (cpath == NULL)
+         goto deny;
+ 
+     /* Now check that @cpath is below @cdir */
+
+--- librsvg-2.40.5/configure
++++ librsvg-2.40.5/configure
+@@ -13659,35 +13659,35 @@
+ $as_echo_n "checking for RSVG_CONVERT... " >&6; }
+ 
+ if test -n "$RSVG_CONVERT_CFLAGS"; then
+     pkg_cv_RSVG_CONVERT_CFLAGS="$RSVG_CONVERT_CFLAGS"
+  elif test -n "$PKG_CONFIG"; then
+     if test -n "$PKG_CONFIG" && \
+-    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo\""; } >&5
+-  ($PKG_CONFIG --exists --print-errors "gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo") 2>&5
++    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo\""; } >&5
++  ($PKG_CONFIG --exists --print-errors "gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo") 2>&5
+   ac_status=$?
+   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+   test $ac_status = 0; }; then
+-  pkg_cv_RSVG_CONVERT_CFLAGS=`$PKG_CONFIG --cflags "gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>/dev/null`
++  pkg_cv_RSVG_CONVERT_CFLAGS=`$PKG_CONFIG --cflags "gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes
+ else
+   pkg_failed=yes
+ fi
+  else
+     pkg_failed=untried
+ fi
+ if test -n "$RSVG_CONVERT_LIBS"; then
+     pkg_cv_RSVG_CONVERT_LIBS="$RSVG_CONVERT_LIBS"
+  elif test -n "$PKG_CONFIG"; then
+     if test -n "$PKG_CONFIG" && \
+-    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo\""; } >&5
+-  ($PKG_CONFIG --exists --print-errors "gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo") 2>&5
++    { { $as_echo "$as_me:${as_lineno-$LINENO}: \$PKG_CONFIG --exists --print-errors \"gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo\""; } >&5
++  ($PKG_CONFIG --exists --print-errors "gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo") 2>&5
+   ac_status=$?
+   $as_echo "$as_me:${as_lineno-$LINENO}: \$? = $ac_status" >&5
+   test $ac_status = 0; }; then
+-  pkg_cv_RSVG_CONVERT_LIBS=`$PKG_CONFIG --libs "gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>/dev/null`
++  pkg_cv_RSVG_CONVERT_LIBS=`$PKG_CONFIG --libs "gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>/dev/null`
+		      test "x$?" != "x0" && pkg_failed=yes
+ else
+   pkg_failed=yes
+ fi
+  else
+     pkg_failed=untried
+@@ -13702,20 +13702,20 @@
+ if $PKG_CONFIG --atleast-pkgconfig-version 0.20; then
+         _pkg_short_errors_supported=yes
+ else
+         _pkg_short_errors_supported=no
+ fi
+         if test $_pkg_short_errors_supported = yes; then
+-	        RSVG_CONVERT_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors --cflags --libs "gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>&1`
++	        RSVG_CONVERT_PKG_ERRORS=`$PKG_CONFIG --short-errors --print-errors --cflags --libs "gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>&1`
+         else
+-	        RSVG_CONVERT_PKG_ERRORS=`$PKG_CONFIG --print-errors --cflags --libs "gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>&1`
++	        RSVG_CONVERT_PKG_ERRORS=`$PKG_CONFIG --print-errors --cflags --libs "gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo" 2>&1`
+         fi
+	# Put the nasty error message in config.log where it belongs
+	echo "$RSVG_CONVERT_PKG_ERRORS" >&5
+ 
+-	as_fn_error $? "Package requirements (gio-2.0 gio-unix-2.0 gdk-pixbuf-2.0 cairo pangocairo) were not met:
++	as_fn_error $? "Package requirements (gio-2.0 gio-windows-2.0 gdk-pixbuf-2.0 cairo pangocairo) were not met:
+ 
+ $RSVG_CONVERT_PKG_ERRORS
+ 
+ Consider adjusting the PKG_CONFIG_PATH environment variable if you
+ installed software in a non-standard prefix.
+
+--- librsvg-2.40.5/rsvg-convert.c
++++ librsvg-2.40.5/rsvg-convert.c
+@@ -33,13 +33,13 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <locale.h>
+ #include <glib/gi18n.h>
+ #include <gio/gio.h>
+-#include <gio/gunixinputstream.h>
++#include <gio/gwin32inputstream.h>
+ 
+ #include "rsvg-css.h"
+ #include "rsvg.h"
+ #include "rsvg-size-callback.h"
+ 
+ #ifdef CAIRO_HAS_PS_SURFACE
+@@ -210,13 +210,13 @@
+     for (i = 0; i < n_args; i++) {
+         GFile *file;
+         GInputStream *stream;
+ 
+         if (using_stdin) {
+             file = NULL;
+-            stream = g_unix_input_stream_new (STDIN_FILENO, FALSE);
++            stream = g_win32_input_stream_new (STDIN_FILENO, FALSE);
+         } else {
+             GFileInfo *file_info;
+             gboolean compressed = FALSE;
+ 
+             file = g_file_new_for_commandline_arg (args[0]);
+             stream = (GInputStream *) g_file_read (file, NULL, &error);
+

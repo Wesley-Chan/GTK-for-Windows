@@ -1,6 +1,6 @@
 @echo off
 
-if not exist 1b_findutils.bat (
+if not exist 1c_findutils.bat (
     @echo Please run this batch file inside /z_Install. Thanks.
     @pause
     exit /B 1
@@ -15,12 +15,10 @@ rem fail, and some may appear successful but badly failed indeed because you
 rem are totally unaware of it.
 rem To solve this, simply use find.exe in the package listed below provided
 rem by the MinGW(not MinGW-w64) project.
-.\Tools\7z.exe x ..\MSYS\findutils-4.4.2-2-msys-1.0.13-bin.tar.lzma -o.\cache
-.\Tools\7z.exe x .\cache\findutils-4.4.2-2-msys-1.0.13-bin.tar -o.\cache
 
-copy .\cache\bin\find.exe C:\msys\bin
+.\Tools\7z.exe x -o.\cache ..\MSYS\findutils-4.4.2-2-msys-1.0.13-bin.tar.lzma
+.\Tools\7z.exe x -oC:\msys\ .\cache\findutils-4.4.2-2-msys-1.0.13-bin.tar
 
-rmdir /S /Q .\cache\bin
 del .\cache\findutils-4.4.2-2-msys-1.0.13-bin.tar
 
 @pause

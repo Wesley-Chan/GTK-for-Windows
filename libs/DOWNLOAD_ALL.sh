@@ -9,7 +9,7 @@ fi
 ZLIB_DL_ADDR=http://prdownloads.sourceforge.net/libpng/zlib-1.2.8.tar.xz
 ZLIB_NAME=$(basename "$ZLIB_DL_ADDR")
 
-XZ_DL_ADDR=http://tukaani.org/xz/xz-5.0.5.tar.xz
+XZ_DL_ADDR=http://tukaani.org/xz/xz-5.0.7.tar.xz
 XZ_NAME=$(basename "$XZ_DL_ADDR")
 
 EXPAT_DL_ADDR=http://sourceforge.net/projects/expat/files/expat/2.1.0/expat-2.1.0.tar.gz
@@ -21,16 +21,16 @@ INTLTOOL_NAME=$(basename "$INTLTOOL_DL_ADDR")
 LIBICONV_DL_ADDR=http://ftpmirror.gnu.org/libiconv/libiconv-1.14.tar.gz
 LIBICONV_NAME=$(basename "$LIBICONV_DL_ADDR")
 
-LIBXML2_DL_ADDR=ftp://gd.tuwien.ac.at/pub/libxml/libxml2-2.9.1.tar.gz
+LIBXML2_DL_ADDR=ftp://gd.tuwien.ac.at/pub/libxml/libxml2-2.9.2.tar.gz
 LIBXML2_NAME=$(basename "$LIBXML2_DL_ADDR")
 
-GETTEXT_DL_ADDR=http://ftpmirror.gnu.org/gettext/gettext-0.19.2.tar.xz
+GETTEXT_DL_ADDR=http://ftpmirror.gnu.org/gettext/gettext-0.19.3.tar.xz
 GETTEXT_NAME=$(basename "$GETTEXT_DL_ADDR")
 
 LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-3.1.tar.gz
 LIBFFI_NAME=$(basename "$LIBFFI_DL_ADDR")
 
-GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.42/glib-2.42.0.tar.xz
+GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.43/glib-2.43.0.tar.xz
 GLIB_NAME=$(basename "$GLIB_DL_ADDR")
 
 PKG_CONFIG_DL_ADDR=http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
@@ -39,13 +39,19 @@ PKG_CONFIG_NAME=$(basename "$PKG_CONFIG_DL_ADDR")
 LIBCROCO_DL_ADDR=https://download.gnome.org/sources/libcroco/0.6/libcroco-0.6.8.tar.xz
 LIBCROCO_NAME=$(basename "$LIBCROCO_DL_ADDR")
 
-ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.14/atk-2.14.0.tar.xz
+UTIL_MACROS_DL_ADDR=http://www.x.org/releases/X11R7.7/src/util/util-macros-1.17.tar.bz2
+UTIL_MACROS_NAME=$(basename "$UTIL_MACROS_DL_ADDR")
+
+LIBEPOXY_DL_ADDR=https://github.com/anholt/libepoxy/archive/v1.2.tar.gz
+LIBEPOXY_NAME=$(basename "$LIBEPOXY_DL_ADDR")
+
+ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.15/atk-2.15.1.tar.xz
 ATK_NAME=$(basename "$ATK_DL_ADDR")
 
 LIBJASPER_DL_ADDR=http://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.1.zip
 LIBJASPER_NAME=$(basename "$LIBJASPER_DL_ADDR")
 
-LIBPNG_DL_ADDR=http://sourceforge.net/projects/libpng/files/libpng16/1.6.13/libpng-1.6.13.tar.xz
+LIBPNG_DL_ADDR=http://sourceforge.net/projects/libpng/files/libpng16/1.6.14/libpng-1.6.14.tar.xz
 LIBPNG_NAME=$(basename "$LIBPNG_DL_ADDR")
 
 LIBJPEG_TURBO_DL_ADDR=http://sourceforge.net/projects/libjpeg-turbo/files/1.3.1/libjpeg-turbo-1.3.1.tar.gz
@@ -66,22 +72,22 @@ LIBFONTCONFIG_NAME=$(basename "$LIBFONTCONFIG_DL_ADDR")
 PIXMAN_DL_ADDR=http://cairographics.org/releases/pixman-0.32.6.tar.gz
 PIXMAN_NAME=$(basename "$PIXMAN_DL_ADDR")
 
-CAIRO_DL_ADDR=http://cairographics.org/releases/cairo-1.12.16.tar.xz
+CAIRO_DL_ADDR=http://cairographics.org/releases/cairo-1.14.0.tar.xz
 CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.8.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
-GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.14/gtk+-3.14.0.tar.xz
+GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.15/gtk+-3.15.1.tar.xz
 GTK_NAME=$(basename "$GTK_DL_ADDR")
 
-LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.4.tar.xz
+LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.5.tar.xz
 LIBRSVG_NAME=$(basename "$LIBRSVG_DL_ADDR")
 
 ICON_NAMING_UTILS_DL_ADDR=http://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
 ICON_NAMING_UTILS_NAME=$(basename "$ICON_NAMING_UTILS_DL_ADDR")
 
-ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/3.14/adwaita-icon-theme-3.14.0.tar.xz
+ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/3.15/adwaita-icon-theme-3.15.1.tar.xz
 ADWAITA_ICON_THEME_NAME=$(basename "$ADWAITA_ICON_THEME_DL_ADDR")
 
 LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/2.3/libsigc++-2.3.1.tar.xz
@@ -106,7 +112,7 @@ function check_existance()
 {
     if [ ! -f $1 ]
     then
-        wget --no-check-certificate $2
+        wget --no-check-certificate -O $1 $2
     fi
 }
 
@@ -152,6 +158,14 @@ cd ..
 
 cd libcroco
 check_existance $LIBCROCO_NAME $LIBCROCO_DL_ADDR
+cd ..
+
+cd libepoxy
+check_existance $EPOXY_NAME $EPOXY_DL_ADDR
+cd ..
+
+cd util-macros
+check_existance $UTIL_MACROS_NAME $UTIL_MACROS_DL_ADDR
 cd ..
 
 cd atk

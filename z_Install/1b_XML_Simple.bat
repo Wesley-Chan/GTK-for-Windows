@@ -1,6 +1,6 @@
 @echo off
 
-if not exist 1c_XML_Simple.bat (
+if not exist 1b_XML_Simple.bat (
     @echo Please run this batch file inside /z_Install. Thanks.
     @pause
     exit /B 1

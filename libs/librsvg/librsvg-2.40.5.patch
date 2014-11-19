@@ -1,5 +1,5 @@
---- librsvg-2.40.4/rsvg-base.c
-+++ librsvg-2.40.4/rsvg-base.c
+--- librsvg-2.40.5/rsvg-base.c
++++ librsvg-2.40.5/rsvg-base.c
 @@ -2207,22 +2207,22 @@
      if (base == NULL)
          goto deny;
@@ -26,8 +26,8 @@
  
      /* Now check that @cpath is below @cdir */
 
---- librsvg-2.40.4/configure
-+++ librsvg-2.40.4/configure
+--- librsvg-2.40.5/configure
++++ librsvg-2.40.5/configure
 @@ -13659,35 +13659,35 @@
  $as_echo_n "checking for RSVG_CONVERT... " >&6; }
  
@@ -94,8 +94,8 @@
  Consider adjusting the PKG_CONFIG_PATH environment variable if you
  installed software in a non-standard prefix.
 
---- librsvg-2.40.4/rsvg-convert.c
-+++ librsvg-2.40.4/rsvg-convert.c
+--- librsvg-2.40.5/rsvg-convert.c
++++ librsvg-2.40.5/rsvg-convert.c
 @@ -33,13 +33,13 @@
  #include <stdio.h>
  #include <stdlib.h>
@@ -124,6 +124,6 @@
              GFileInfo *file_info;
              gboolean compressed = FALSE;
  
-             file = g_file_new_for_commandline_arg (args[0]);
+             file = g_file_new_for_commandline_arg (args[i]);
              stream = (GInputStream *) g_file_read (file, NULL, &error);
 

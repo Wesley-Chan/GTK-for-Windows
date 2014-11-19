@@ -6,6 +6,16 @@ then
     exit
 fi
 
+net session
+if [ $? != 0 ];then
+    echo Please run the MSYS shell as Administrator.
+    echo
+    echo Or you can change your UAC to the lowest level\(reboot required\).
+    echo If you do so, please remember to change it back later.
+    start UserAccountControlSettings.exe
+    exit
+fi
+
 ./zlib.sh
 ./xz.sh
 ./expat.sh
@@ -19,6 +29,9 @@ fi
 ./glib.sh
 ./pkg-config.sh
 ./libcroco.sh
+
+./util-macros.sh
+./libepoxy.sh
 
 ./atk.sh
 ./libjasper.sh
