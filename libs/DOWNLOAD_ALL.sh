@@ -30,7 +30,7 @@ GETTEXT_NAME=$(basename "$GETTEXT_DL_ADDR")
 LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-3.1.tar.gz
 LIBFFI_NAME=$(basename "$LIBFFI_DL_ADDR")
 
-GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.43/glib-2.43.0.tar.xz
+GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.43/glib-2.43.1.tar.xz
 GLIB_NAME=$(basename "$GLIB_DL_ADDR")
 
 PKG_CONFIG_DL_ADDR=http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
@@ -45,7 +45,7 @@ UTIL_MACROS_NAME=$(basename "$UTIL_MACROS_DL_ADDR")
 LIBEPOXY_DL_ADDR=https://github.com/anholt/libepoxy/archive/v1.2.tar.gz
 LIBEPOXY_NAME=$(basename "$LIBEPOXY_DL_ADDR")
 
-ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.15/atk-2.15.1.tar.xz
+ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.15/atk-2.15.2.tar.xz
 ATK_NAME=$(basename "$ATK_DL_ADDR")
 
 LIBJASPER_DL_ADDR=http://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.1.zip
@@ -60,7 +60,7 @@ LIBJPEG_TURBO_NAME=$(basename "$LIBJPEG_TURBO_DL_ADDR")
 LIBTIFF_DL_ADDR=http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz
 LIBTIFF_NAME=$(basename "$LIBTIFF_DL_ADDR")
 
-GDK_PIXBUF_DL_ADDR=https://download.gnome.org/sources/gdk-pixbuf/2.31/gdk-pixbuf-2.31.1.tar.xz
+GDK_PIXBUF_DL_ADDR=https://download.gnome.org/sources/gdk-pixbuf/2.31/gdk-pixbuf-2.31.2.tar.xz
 GDK_PIXBUF_NAME=$(basename "$GDK_PIXBUF_DL_ADDR")
 
 LIBFREETYPE_DL_ADDR=http://sourceforge.net/projects/freetype/files/freetype2/2.5.3/freetype-2.5.3.tar.bz2
@@ -78,7 +78,7 @@ CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.8.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
-GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.15/gtk+-3.15.1.tar.xz
+GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.15/gtk+-3.15.2.tar.xz
 GTK_NAME=$(basename "$GTK_DL_ADDR")
 
 LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.5.tar.xz

@@ -1,0 +1,17 @@
+--- gdk-pixbuf-2.31.2/gdk-pixbuf/io-gdip-utils.h
++++ gdk-pixbuf-2.31.2/gdk-pixbuf/io-gdip-utils.h
+@@ -20,13 +20,13 @@
+  */
+ 
+ #ifndef _HAVE_IO_GDIP_UTILS_H
+ #define _HAVE_IO_GDIP_UTILS_H
+ 
+ #include "gdk-pixbuf.h"
+-#include "gdk-pixbuf-i18n.h"
++#include "glib/gi18n.h"
+ 
+ #include "io-gdip-native.h"
+ 
+ gboolean
+ gdip_save_to_file_callback (const gchar *buf,
+                             gsize        count,
