@@ -1,15 +1,7 @@
 # GTK+ for Windows
 
 ## News
-GTK+ at 3.15.1, and gtkmm at 3.14.0.
-
-I decide to drop gtkmm for a while.
-
-This new revision of GTK+ requires libepoxy. It took me quite some time to make things smooth.
-
-And also in consideration some of you are using a Windows copy newew than XP, these batch files are better run with administrative privilege. One should run that by manually opening up a admin command prompt, then CD into those folders and run. Please forgive me about those dirty ways.
-
-Font Droid Sans(included) needs to be install for Adwaita-icon-theme.
+GTK+ at 3.15.2.
 
 ## Introduction
 
