@@ -17,7 +17,7 @@ if ERRORLEVEL 1 (
     exit /B 1
 )
 
-.\Tools\7z.exe x -o.\cache ..\Other\DroidSans.7z
+.\Tools\7za.exe x -o.\cache ..\Other\DroidSans.7z
 copy .\cache\DroidSans.ttf %SYSTEMROOT%\Fonts
 regedit /s .\cache\DroidSans.reg
 

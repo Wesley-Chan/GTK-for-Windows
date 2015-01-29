@@ -6,8 +6,8 @@ if not exist 1f_m4.bat (
     exit /B 1
 )
 
-.\Tools\7z.exe x -o.\cache ..\MSYS\m4-1.4.16-2-msys-1.0.17-bin.tar.lzma
-.\Tools\7z.exe x -y -oC:\msys\ .\cache\m4-1.4.16-2-msys-1.0.17-bin.tar
+.\Tools\7za.exe x -o.\cache ..\MSYS\m4-1.4.16-2-msys-1.0.17-bin.tar.lzma
+.\Tools\7za.exe x -y -oC:\msys\ .\cache\m4-1.4.16-2-msys-1.0.17-bin.tar
 
 del .\cache\m4-1.4.16-2-msys-1.0.17-bin.tar
 

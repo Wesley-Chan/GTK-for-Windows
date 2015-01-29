@@ -16,8 +16,8 @@ rem are totally unaware of it.
 rem To solve this, simply use find.exe in the package listed below provided
 rem by the MinGW(not MinGW-w64) project.
 
-.\Tools\7z.exe x -o.\cache ..\MSYS\findutils-4.4.2-2-msys-1.0.13-bin.tar.lzma
-.\Tools\7z.exe x -oC:\msys\ .\cache\findutils-4.4.2-2-msys-1.0.13-bin.tar
+.\Tools\7za.exe x -o.\cache ..\MSYS\findutils-4.4.2-2-msys-1.0.13-bin.tar.lzma
+.\Tools\7za.exe x -oC:\msys\ .\cache\findutils-4.4.2-2-msys-1.0.13-bin.tar
 
 del .\cache\findutils-4.4.2-2-msys-1.0.13-bin.tar
 

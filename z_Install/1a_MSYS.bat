@@ -6,7 +6,7 @@ if not exist 1a_MSYS.bat (
     exit /B 1
 )
 
-.\Tools\7z.exe x ..\MSYS\MSYS-20111123.zip msys -oC:\ 
+.\Tools\7za.exe x ..\MSYS\MSYS-20111123.zip msys -oC:\ 
 
 @echo.
 @echo *******************************************
