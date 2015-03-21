@@ -14,8 +14,9 @@ make install 2>&1 | tee ../../logs/libepoxy-makeinstall.log
 
 # Remove libtool.
 # This could cause hanging when building GTK+.
-rm /bin/libtool
-rm /bin/libtoolize
+#rm /bin/libtool
+#rm /bin/libtoolize
+#CT: Commented out deletion. If for some reason LibEpoxy doesn't work. This screws everything up.
 
 cd ..
 rm -rf libepoxy-1.2

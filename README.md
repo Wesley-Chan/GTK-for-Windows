@@ -52,3 +52,7 @@ Some batch files for setting up a building environment on Windows.
 This build system is inspired by and modified from [Tarnyko](http://www.tarnyko.net/)'s [gtk3\_build\_system](http://www.tarnyko.net/repo/gtk3_build_system/).
 
 He always does the great job porting GTK+ to Windows for GTK+ fans all around the world.
+
+## How To Build/Install
+
+Please View Here: https://github.com/Wesley-Chan/GTK-for-Windows/wiki/Instructions
