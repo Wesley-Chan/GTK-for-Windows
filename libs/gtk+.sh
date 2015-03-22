@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd gtk+
-tar -xf gtk+-3.15.2.tar.xz
-cd gtk+-3.15.2
+tar -xf gtk+-3.15.12.tar.xz
+cd gtk+-3.15.12
 
 ./configure --enable-win32-backend --enable-broadway-backend --with-included-immodules --prefix=$PREFIX 2>&1 | tee ../../logs/gtk+-configure.log
 make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/gtk+-make.log
@@ -16,4 +16,4 @@ cp gtk/.libs/gtk-update-icon-cache.exe gtk/
 make install 2>&1 | tee ../../logs/gtk+-makeinstall.log
 
 cd ..
-rm -rf gtk+-3.15.2
+rm -rf gtk+-3.15.12

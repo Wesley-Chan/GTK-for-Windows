@@ -78,7 +78,7 @@ CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.8.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
-GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.15/gtk+-3.15.2.tar.xz
+GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.15/gtk+-3.15.12.tar.xz
 GTK_NAME=$(basename "$GTK_DL_ADDR")
 
 LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.5.tar.xz
