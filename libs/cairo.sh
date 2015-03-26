@@ -1,11 +1,8 @@
 #!/bin/sh
 
 cd cairo
-tar -xf cairo-1.14.0.tar.xz
-patch -p0 < cairo-1.14.0.patch
-cd cairo-1.14.0
-
-export CFLAGS+=" -fno-lto "
+tar -xf cairo-1.14.2.tar.xz
+cd cairo-1.14.2
 
 ./configure --disable-static --enable-win32=yes --enable-win32-font=yes --enable-png=yes --enable-ft=yes --enable-fc=yes --prefix=$PREFIX 2>&1 | tee ../../logs/cairo-configure.log
 make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/cairo-make.log
@@ -15,4 +12,4 @@ make install 2>&1 | tee ../../logs/cairo-makeinstall.log
 cp src/cairo.def $PREFIX/lib
 
 cd ..
-rm -rf cairo-1.14.0
+rm -rf cairo-1.14.2

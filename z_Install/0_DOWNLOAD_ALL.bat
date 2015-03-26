@@ -58,8 +58,8 @@ if errorlevel 1 pause && exit /B 1
 
 set name=MinGW-w64
 set folder=..\MinGW-w64\GCC\
-set filename=i686-4.9.2-release-posix-sjlj-rt_v3-rev0.7z
-set dladdr=http://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win32/Personal%%20Builds/mingw-builds/4.9.2/threads-posix/sjlj/i686-4.9.2-release-posix-sjlj-rt_v3-rev0.7z/download
+set filename=i686-4.9.2-release-posix-sjlj-rt_v4-rev2.7z
+set dladdr=http://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win32/Personal%%20Builds/mingw-builds/4.9.2/threads-posix/sjlj/i686-4.9.2-release-posix-sjlj-rt_v4-rev2.7z/download
 echo | set /p dummyvar=Checking whether MinGW-w64 exists.....
 call:CHECK
 if errorlevel 1 pause && exit /B 1

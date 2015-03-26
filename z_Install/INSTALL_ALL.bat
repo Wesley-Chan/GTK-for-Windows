@@ -28,6 +28,9 @@ call 1e_automake.bat
 @echo Going to run 1f_m4.bat
 call 1f_m4.bat
 
+@echo Going to run 1g_libtool.bat
+call 1g_libtool.bat
+
 @echo Going to run 2a_MinGW-w64.bat
 call 2a_MinGW-w64.bat
 

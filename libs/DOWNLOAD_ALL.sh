@@ -9,13 +9,13 @@ fi
 ZLIB_DL_ADDR=http://prdownloads.sourceforge.net/libpng/zlib-1.2.8.tar.xz
 ZLIB_NAME=$(basename "$ZLIB_DL_ADDR")
 
-XZ_DL_ADDR=http://tukaani.org/xz/xz-5.0.7.tar.xz
+XZ_DL_ADDR=http://tukaani.org/xz/xz-5.2.1.tar.xz
 XZ_NAME=$(basename "$XZ_DL_ADDR")
 
 EXPAT_DL_ADDR=http://sourceforge.net/projects/expat/files/expat/2.1.0/expat-2.1.0.tar.gz
 EXPAT_NAME=$(basename "$EXPAT_DL_ADDR")
 
-INTLTOOL_DL_ADDR=https://launchpad.net/intltool/trunk/0.50.2/+download/intltool-0.50.2.tar.gz
+INTLTOOL_DL_ADDR=https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 INTLTOOL_NAME=$(basename "$INTLTOOL_DL_ADDR")
 
 LIBICONV_DL_ADDR=http://ftpmirror.gnu.org/libiconv/libiconv-1.14.tar.gz
@@ -24,13 +24,13 @@ LIBICONV_NAME=$(basename "$LIBICONV_DL_ADDR")
 LIBXML2_DL_ADDR=ftp://gd.tuwien.ac.at/pub/libxml/libxml2-2.9.2.tar.gz
 LIBXML2_NAME=$(basename "$LIBXML2_DL_ADDR")
 
-GETTEXT_DL_ADDR=http://ftpmirror.gnu.org/gettext/gettext-0.19.3.tar.xz
+GETTEXT_DL_ADDR=http://ftpmirror.gnu.org/gettext/gettext-0.19.4.tar.xz
 GETTEXT_NAME=$(basename "$GETTEXT_DL_ADDR")
 
-LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-3.1.tar.gz
+LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
 LIBFFI_NAME=$(basename "$LIBFFI_DL_ADDR")
 
-GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.43/glib-2.43.1.tar.xz
+GLIB_DL_ADDR=https://download.gnome.org/sources/glib/2.44/glib-2.44.0.tar.xz
 GLIB_NAME=$(basename "$GLIB_DL_ADDR")
 
 PKG_CONFIG_DL_ADDR=http://pkgconfig.freedesktop.org/releases/pkg-config-0.28.tar.gz
@@ -45,55 +45,55 @@ UTIL_MACROS_NAME=$(basename "$UTIL_MACROS_DL_ADDR")
 LIBEPOXY_DL_ADDR=https://github.com/anholt/libepoxy/archive/v1.2.tar.gz
 LIBEPOXY_NAME=$(basename "$LIBEPOXY_DL_ADDR")
 
-ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.15/atk-2.15.2.tar.xz
+ATK_DL_ADDR=https://download.gnome.org/sources/atk/2.16/atk-2.16.0.tar.xz
 ATK_NAME=$(basename "$ATK_DL_ADDR")
 
 LIBJASPER_DL_ADDR=http://www.ece.uvic.ca/~frodo/jasper/software/jasper-1.900.1.zip
 LIBJASPER_NAME=$(basename "$LIBJASPER_DL_ADDR")
 
-LIBPNG_DL_ADDR=http://sourceforge.net/projects/libpng/files/libpng16/1.6.14/libpng-1.6.14.tar.xz
+LIBPNG_DL_ADDR=http://sourceforge.net/projects/libpng/files/libpng16/1.6.16/libpng-1.6.16.tar.xz
 LIBPNG_NAME=$(basename "$LIBPNG_DL_ADDR")
 
-LIBJPEG_TURBO_DL_ADDR=http://sourceforge.net/projects/libjpeg-turbo/files/1.3.1/libjpeg-turbo-1.3.1.tar.gz
+LIBJPEG_TURBO_DL_ADDR=http://sourceforge.net/projects/libjpeg-turbo/files/1.4.0/libjpeg-turbo-1.4.0.tar.gz
 LIBJPEG_TURBO_NAME=$(basename "$LIBJPEG_TURBO_DL_ADDR")
 
 LIBTIFF_DL_ADDR=http://download.osgeo.org/libtiff/tiff-4.0.3.tar.gz
 LIBTIFF_NAME=$(basename "$LIBTIFF_DL_ADDR")
 
-GDK_PIXBUF_DL_ADDR=https://download.gnome.org/sources/gdk-pixbuf/2.31/gdk-pixbuf-2.31.2.tar.xz
+GDK_PIXBUF_DL_ADDR=https://download.gnome.org/sources/gdk-pixbuf/2.31/gdk-pixbuf-2.31.3.tar.xz
 GDK_PIXBUF_NAME=$(basename "$GDK_PIXBUF_DL_ADDR")
 
-LIBFREETYPE_DL_ADDR=http://sourceforge.net/projects/freetype/files/freetype2/2.5.3/freetype-2.5.3.tar.bz2
+LIBFREETYPE_DL_ADDR=http://sourceforge.net/projects/freetype/files/freetype2/2.5.5/freetype-2.5.5.tar.bz2
 LIBFREETYPE_NAME=$(basename "$LIBFREETYPE_DL_ADDR")
 
-LIBFONTCONFIG_DL_ADDR=http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.1.tar.bz2
+LIBFONTCONFIG_DL_ADDR=http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.93.tar.bz2
 LIBFONTCONFIG_NAME=$(basename "$LIBFONTCONFIG_DL_ADDR")
 
 PIXMAN_DL_ADDR=http://cairographics.org/releases/pixman-0.32.6.tar.gz
 PIXMAN_NAME=$(basename "$PIXMAN_DL_ADDR")
 
-CAIRO_DL_ADDR=http://cairographics.org/releases/cairo-1.14.0.tar.xz
+CAIRO_DL_ADDR=http://cairographics.org/releases/cairo-1.14.2.tar.xz
 CAIRO_NAME=$(basename "$CAIRO_DL_ADDR")
 
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/1.36/pango-1.36.8.tar.xz
 PANGO_NAME=$(basename "$PANGO_DL_ADDR")
 
-GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.15/gtk+-3.15.2.tar.xz
+GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/3.16/gtk+-3.16.0.tar.xz
 GTK_NAME=$(basename "$GTK_DL_ADDR")
 
-LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.5.tar.xz
+LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/2.40/librsvg-2.40.8.tar.xz
 LIBRSVG_NAME=$(basename "$LIBRSVG_DL_ADDR")
 
 ICON_NAMING_UTILS_DL_ADDR=http://tango.freedesktop.org/releases/icon-naming-utils-0.8.90.tar.bz2
 ICON_NAMING_UTILS_NAME=$(basename "$ICON_NAMING_UTILS_DL_ADDR")
 
-ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/3.15/adwaita-icon-theme-3.15.1.tar.xz
+ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/3.16/adwaita-icon-theme-3.16.0.tar.xz
 ADWAITA_ICON_THEME_NAME=$(basename "$ADWAITA_ICON_THEME_DL_ADDR")
 
-LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/2.3/libsigc++-2.3.1.tar.xz
+LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/2.4/libsigc++-2.4.1.tar.xz
 LIBSIGCPP_NAME=$(basename "$LIBSIGCPP_DL_ADDR")
 
-GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/2.42/glibmm-2.42.0.tar.xz
+GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/2.44/glibmm-2.44.0.tar.xz
 GLIBMM_NAME=$(basename "$GLIBMM_DL_ADDR")
 
 ATKMM_DL_ADDR=https://download.gnome.org/sources/atkmm/2.22/atkmm-2.22.7.tar.xz
@@ -102,10 +102,10 @@ ATKMM_NAME=$(basename "$ATKMM_DL_ADDR")
 CAIROMM_DL_ADDR=http://cairographics.org/releases/cairomm-1.11.2.tar.gz
 CAIROMM_NAME=$(basename "$CAIROMM_DL_ADDR")
 
-PANGOMM_DL_ADDR=https://download.gnome.org/sources/pangomm/2.34/pangomm-2.34.0.tar.xz
+PANGOMM_DL_ADDR=https://download.gnome.org/sources/pangomm/2.35/pangomm-2.35.1.tar.xz
 PANGOMM_NAME=$(basename "$PANGOMM_DL_ADDR")
 
-GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/3.14/gtkmm-3.14.0.tar.xz
+GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/3.16/gtkmm-3.16.0.tar.xz
 GTKMM_NAME=$(basename "$GTKMM_DL_ADDR")
 
 function check_existance()

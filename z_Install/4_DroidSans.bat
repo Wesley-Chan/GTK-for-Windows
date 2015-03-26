@@ -8,9 +8,9 @@ if not exist 4_DroidSans.bat (
 
 net session
 if ERRORLEVEL 1 (
-    @echo Please run this batch file in an administrative command prompt^(not by right clicking^).
+    @echo Please run this batch file in an administrative command prompt ^(not by right clicking^).
     @echo.
-    @echo Or you can change your UAC to the lowest level^(reboot required^).
+    @echo Or you can change your UAC to the lowest level ^(reboot required^).
     @echo If you do so, please remember to change it back later.
     @pause
     start UserAccountControlSettings.exe
