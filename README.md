@@ -5,7 +5,7 @@ GTK+ and gtkmm at 3.16.0.
 
 ## Introduction
 
-This project is to make the latest [GTK+](http://www.gtk.org) available on Windows.
+This project is to make the latest [GTK+](http://www.gtk.org) and [gtkmm](http://www.gtkmm.org) available on Windows.
 
 As everyone knows, the GTK+ team doesn't release [GTK+ binaries for Windows](http://www.gtk.org/download/win32.php) too often. So when we want to use GTK+ as GUI in our programmes, we have to either use an (really) old official release, or we could just build it and all of its dependencies from scratch.
 
@@ -27,23 +27,23 @@ This project provides you only scripts. Yes. I don't ship tools and source code 
 
 So I suppose the best idea is to keep the size of this project as small as possible and let you download the huge files by yourselves from the nearest mirror site.
 
-* `/libs`
+* `libs`
 
 This folder keeps the source code tarballs (but empty for now) and downloading/building scripts.
 
-* `/MinGW-w64`
+* `MinGW-w64`
 
 A Windows port of GCC provided by the MinGW-w64 project. It will be here after you download it.
 
-* `/MSYS`
+* `MSYS`
 
 Minimal SYStem, a collection of GNU utilities allowing you to build applications which depends on traditional UNIX tools on Windows. Also just a folder.
 
-* `/Other`
+* `Other`
 
 Some applications and header files needed when building the libraries. And it's likely to be empty too.
 
-* `/z_Install`
+* `z_Install`
 
 Some batch files for setting up a building environment on Windows.
 
@@ -53,6 +53,6 @@ This build system is inspired by and modified from [Tarnyko](http://www.tarnyko.
 
 He always does the great job porting GTK+ to Windows for GTK+ fans all around the world.
 
-## How To Build/Install
+## How to Use
 
 Please click here: https://github.com/Wesley-Chan/GTK-for-Windows/wiki/Instructions
