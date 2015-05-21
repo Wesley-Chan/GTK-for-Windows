@@ -16,6 +16,8 @@ if [ $? != 0 ];then
     exit
 fi
 
+. ./LIB_INFO.sh
+
 ./zlib.sh
 ./xz.sh
 ./expat.sh

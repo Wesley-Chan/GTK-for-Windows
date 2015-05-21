@@ -1,12 +1,12 @@
 #!/bin/sh
 
 cd adwaita-icon-theme
-tar -xf adwaita-icon-theme-3.16.0.tar.xz
-cd adwaita-icon-theme-3.16.0
+tar -xf $ADWAITA_ICON_THEME_TARBALL_NAME
+cd $ADWAITA_FOLDER_NAME
 
 ./configure --prefix=$PREFIX 2>&1 | tee ../../logs/adwaita-icon-theme-configure.log
 make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/adwaita-icon-theme-make.log
 make install 2>&1 | tee ../../logs/adwaita-icon-theme-makeinstall.log
 
 cd ..
-rm -rf adwaita-icon-theme-3.16.0
+rm -rf $ADWAITA_FOLDER_NAME

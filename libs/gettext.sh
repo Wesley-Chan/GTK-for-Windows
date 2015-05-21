@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd gettext
-tar -xf gettext-0.19.4.tar.xz
-cd gettext-0.19.4
+tar -xf $GETTEXT_TARBALL_NAME
+cd $GETTEXT_FOLDER_NAME
 
 cd gettext-runtime
 ./configure --disable-static --with-libiconv-prefix=$PREFIX --enable-threads=windows --enable-relocatable --prefix=$PREFIX 2>&1 | tee ../../../logs/gettext-runtime-configure.log
@@ -23,6 +23,6 @@ install ./src/msgmerge.exe $PREFIX/bin
 install ./src/xgettext.exe $PREFIX/bin
 
 cd ../..
-rm -rf gettext-0.19.4
+rm -rf $GETTEXT_FOLDER_NAME
 
 echo OK!

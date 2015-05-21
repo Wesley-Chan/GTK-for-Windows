@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd libxml2
-tar -xf libxml2-2.9.2.tar.gz
-cd libxml2-2.9.2
+tar -xf $LIBXML2_TARBALL_NAME
+cd $LIBXML2_FOLDER_NAME
 
 #To avoid using pkg-config.
 export LZMA_LIBS=-llzma
@@ -12,4 +12,4 @@ make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/libxml2-make.log
 make install 2>&1 | tee ../../logs/libxml2-makeinstall.log
 
 cd ..
-rm -rf libxml2-2.9.2
+rm -rf $LIBXML2_FOLDER_NAME

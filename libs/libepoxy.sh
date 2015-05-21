@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd libepoxy
-tar -xf v1.2.tar.gz
-cd libepoxy-1.2
+tar -xf $LIBEPOXY_TARBALL_NAME
+cd $LIBEPOXY_FOLDER_NAME
 
 cp /opt/share/aclocal/pkg.m4 /share/aclocal/pkg.m4
 
@@ -28,4 +28,4 @@ mv /bin/libtool /bin/libtool_for_epoxy
 mv /bin/libtoolize /bin/libtoolize_for_epoxy
 
 cd ..
-rm -rf libepoxy-1.2
+rm -rf $LIBEPOXY_FOLDER_NAME

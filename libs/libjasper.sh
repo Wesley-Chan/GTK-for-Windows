@@ -1,8 +1,8 @@
 #!/bin/sh
 
 cd libjasper
-unzip -o jasper-1.900.1.zip
-cd jasper-1.900.1
+unzip -o $LIBJASPER_TARBALL_NAME
+cd $LIBJASPER_FOLDER_NAME
 
 #Patch source for the undefined reference to sleep problem
 cd ..
@@ -20,4 +20,4 @@ make -j $NUMBER_OF_PROCESSORS 2>&1 | tee ../../logs/libjasper-make.log
 make install 2>&1 | tee ../../logs/libjasper-makeinstall.log
 
 cd ..
-rm -rf jasper-1.900.1
+rm -rf $LIBJASPER_FOLDER_NAME
