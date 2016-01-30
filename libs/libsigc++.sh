@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libsigc++
 tar -xf $LIBSIGCPP_TARBALL_NAME

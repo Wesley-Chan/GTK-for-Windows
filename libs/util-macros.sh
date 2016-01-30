@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd util-macros
 tar -xf $UTIL_MACROS_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd icon-naming-utils
 tar -xf $ICON_NAMING_UTILS_TARBALL_NAME

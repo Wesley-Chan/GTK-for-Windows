@@ -1,9 +1,7 @@
 # GTK+ for Windows
 
 ## News
-GTK+ at 3.17.1 and gtkmm at 3.16.0.
-
-No more screwing around with the version numbers! From now on, changing versions of any package will take efforts of moving your fingers with just a few seconds. See FAQ for detail.
+GTK+ at 3.19.7 and gtkmm at 3.19.6.
 
 ## Introduction
 

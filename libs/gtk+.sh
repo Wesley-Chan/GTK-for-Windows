@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd gtk+
 tar -xf $GTK_TARBALL_NAME

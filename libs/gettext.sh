@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd gettext
 tar -xf $GETTEXT_TARBALL_NAME

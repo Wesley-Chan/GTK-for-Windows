@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd zlib
 tar -xf $ZLIB_TARBALL_NAME

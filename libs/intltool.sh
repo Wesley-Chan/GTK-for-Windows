@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd intltool
 tar -xf $INTLTOOL_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd adwaita-icon-theme
 tar -xf $ADWAITA_ICON_THEME_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd pangomm
 tar -xf $PANGOMM_TARBALL_NAME

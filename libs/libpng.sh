@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libpng
 tar -xf $LIBPNG_TARBALL_NAME

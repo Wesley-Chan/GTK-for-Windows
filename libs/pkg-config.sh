@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd pkg-config
 tar -xf $PKG_CONFIG_TARBALL_NAME

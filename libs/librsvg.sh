@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd librsvg
 tar -xf $LIBRSVG_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libepoxy
 tar -xf $LIBEPOXY_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libjasper
 unzip -o $LIBJASPER_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libcroco
 tar -xf $LIBCROCO_TARBALL_NAME

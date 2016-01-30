@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd atk
 tar -xf $ATK_TARBALL_NAME

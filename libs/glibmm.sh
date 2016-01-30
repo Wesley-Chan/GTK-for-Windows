@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd glibmm
 tar -xf $GLIBMM_TARBALL_NAME

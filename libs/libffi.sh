@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libffi
 tar -xf $LIBFFI_TARBALL_NAME

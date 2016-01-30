@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd gtkmm
 tar -xf $GTKMM_TARBALL_NAME

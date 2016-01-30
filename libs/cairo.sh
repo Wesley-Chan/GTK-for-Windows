@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd cairo
 tar -xf $CAIRO_TARBALL_NAME

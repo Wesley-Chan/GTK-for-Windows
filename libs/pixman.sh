@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd pixman
 tar -xf $PIXMAN_TARBALL_NAME

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libjpeg-turbo
 tar -xf $LIBJPEG_TURBO_TARBALL_NAME

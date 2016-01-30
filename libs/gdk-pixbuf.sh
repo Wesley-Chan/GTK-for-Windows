@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd gdk-pixbuf
 tar -xf $GDK_PIXBUF_TARBALL_NAME

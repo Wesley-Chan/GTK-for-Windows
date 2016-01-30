@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libtiff
 tar -xf $LIBTIFF_TARBALL_NAME

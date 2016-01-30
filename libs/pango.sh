@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd pango
 tar -xf $PANGO_TARBALL_NAME

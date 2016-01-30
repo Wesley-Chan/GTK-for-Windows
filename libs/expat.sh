@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd expat
 tar -xf $EXPAT_TARBALL_NAME

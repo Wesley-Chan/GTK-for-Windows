@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e
 
 if [ ! -f DOWNLOAD_ALL.sh ]
 then

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd glib
 tar -xf $GLIB_TARBALL_NAME

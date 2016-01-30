@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e -o pipefail
 
 cd libfontconfig
 tar -xf $LIBFONTCONFIG_TARBALL_NAME
