@@ -5,27 +5,17 @@ GTK+ at 3.19.7 and gtkmm at 3.19.6.
 
 ## Introduction
 
-This project is to make the latest [GTK+](http://www.gtk.org) and [gtkmm](http://www.gtkmm.org) available on Windows.
+This goal of this project is to make the latest [GTK+](http://www.gtk.org) and [gtkmm](http://www.gtkmm.org) available on Windows.
 
-As everyone knows, the GTK+ team doesn't release [GTK+ binaries for Windows](http://www.gtk.org/download/win32.php) too often. So when we want to use GTK+ as GUI in our programmes, we have to either use an (really) old official release, or we could just build it and all of its dependencies from scratch.
+The GTK+ team no longer provides binaries for Windows since sometime in 2015 Q3 (and it was a very old version). So when we want to use GTK+ in our programmes, we have to pull it via MSYS2 (see [here](http://www.gtk.org/download/windows.php)), or build it and all its dependencies from scratch.
 
-Now I'm going to ease the pain when building them.
+Now here are some automated scripts which helps you download all the stuff you need and compile them for you.
 
-With this project, you can easily download all the tools needed and the source code tarballs from the Internet, then again easily build them into binaries for Windows, on your own machine! All what I'm asking from you is just one to two hours (on modern machines). Please refer to the [Wiki pages](https://github.com/Wesley-Chan/GTK-for-Windows/wiki) for more information.
-
-Since this project is always trying to make the latest GTK+ and its dependencies, which may have bugs, able to be built, the binaries comes out from the compiler and linker may be unstable, sometimes on the bleeding edge. It's for preview and test only. No warranty. If you're looking for a more stable one, please consider using the official release.
+Please refer to the [Wiki pages](https://github.com/Wesley-Chan/GTK-for-Windows/wiki) for more information.
 
 ## Content
 
-This project provides you only scripts. Yes. I don't ship tools and source code to you because of three reasons.
-
-1. Tools and source code tarballs are too large (249MB with everything) to be held online and to be downloaded.
-
-2. This project keeps updated with the latest source code. It will be changed rapidly. It's painful to remove the old source code tarballs and upload/download the new ones.
-
-3. This project is currently hosted on GitHub using Git. Any obsolete and removed files (old source code tarballs) would still remain on GitHub's server. As time goes by, the project size will become unacceptable huge.
-
-So I suppose the best idea is to keep the size of this project as small as possible and let you download the huge files by yourselves from the nearest mirror site.
+Let's see what we got in these four folders.
 
 * `libs`
 
@@ -51,7 +41,7 @@ Some batch files for setting up a building environment on Windows.
 
 This build system is inspired by and modified from [Tarnyko](http://www.tarnyko.net/)'s [gtk3\_build\_system](http://www.tarnyko.net/repo/gtk3_build_system/).
 
-He always does the great job porting GTK+ to Windows for GTK+ fans all around the world.
+He was always doing the great job porting GTK+ to Windows for GTK+ fans all around the world.
 
 ## How to Use
 
