@@ -1,7 +1,7 @@
 # GTK+ for Windows
 
 ## Version
-GTK+  - 3.19.7
+GTK+  - 3.19.7  
 gtkmm - 3.19.6
 
 ## Introduction
@@ -23,15 +23,19 @@ This folder will keep the source code tarballs after being downloaded. Downloadi
 Some applications and header files needed when building the libraries.
 
 * `Tools`
+
 wget.exe for downloading and 7za.exe for extracting.
 
 * `setup.bat`
+
 This batch file setups a building environment for you.
 
 * `LICENSE.md`
+
 License.
 
 * `README.md`
+
 The file you're reading.
 
 ## Origin
