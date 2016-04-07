@@ -2,6 +2,7 @@
 
 ## Version
 GTK+  - 3.20.2
+
 gtkmm - 3.20.0
 
 ## Introduction
