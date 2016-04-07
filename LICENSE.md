@@ -3,7 +3,7 @@
 ## [License for 7za.exe](http://www.7-zip.org/license.txt)
 7za.exe is an executable from www.7-zip.org by Igor Pavlov.
 
-[Source code](http://www.7-zip.org/a/7z1514-src.7z)
+[Source code](http://www.7-zip.org/a/7z1514-src.7z).
 
 ## [License for wget.exe](https://www.gnu.org/copyleft/gpl.html)
 [Source code](http://ftp.gnu.org/gnu/wget/wget-1.17.1.tar.xz).

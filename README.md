@@ -1,8 +1,8 @@
 # GTK+ for Windows
 
 ## Version
-GTK+  - 3.19.7
-gtkmm - 3.19.6
+GTK+  - 3.20.2
+gtkmm - 3.20.0
 
 ## Introduction
 
@@ -26,7 +26,7 @@ Some applications and header files needed when building the libraries.
 wget.exe for downloading and 7za.exe for extracting.
 
 * `setup.bat`
-This batch file setups a building environment for you.
+This batch file sets up a building environment for you.
 
 * `LICENSE.md`
 License.
