@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ZLIB_VERSION=1.2.8
-ZLIB_DL_ADDR=http://prdownloads.sourceforge.net/libpng/zlib-$ZLIB_VERSION.tar.xz
+ZLIB_DL_ADDR=https://prdownloads.sourceforge.net/libpng/zlib-$ZLIB_VERSION.tar.xz
 export ZLIB_TARBALL_NAME=$(basename "$ZLIB_DL_ADDR")
 export ZLIB_FOLDER_NAME="${ZLIB_TARBALL_NAME%.*.*}"
 
@@ -10,8 +10,8 @@ XZ_DL_ADDR=http://tukaani.org/xz/xz-$XZ_VERSION.tar.xz
 export XZ_TARBALL_NAME=$(basename "$XZ_DL_ADDR")
 export XZ_FOLDER_NAME="${XZ_TARBALL_NAME%.*.*}"
 
-EXPAT_VERSION=2.1.0
-EXPAT_DL_ADDR=http://sourceforge.net/projects/expat/files/expat/$EXPAT_VERSION/expat-$EXPAT_VERSION.tar.gz
+EXPAT_VERSION=2.2.0
+EXPAT_DL_ADDR=https://sourceforge.net/projects/expat/files/expat/$EXPAT_VERSION/expat-$EXPAT_VERSION.tar.bz2
 export EXPAT_TARBALL_NAME=$(basename "$EXPAT_DL_ADDR")
 export EXPAT_FOLDER_NAME="${EXPAT_TARBALL_NAME%.*.*}"
 
@@ -25,12 +25,12 @@ LIBICONV_DL_ADDR=http://ftpmirror.gnu.org/libiconv/libiconv-$LIBICONV_VERSION.ta
 export LIBICONV_TARBALL_NAME=$(basename "$LIBICONV_DL_ADDR")
 export LIBICONV_FOLDER_NAME="${LIBICONV_TARBALL_NAME%.*.*}"
 
-LIBXML2_VERSION=2.9.3
+LIBXML2_VERSION=2.9.4
 LIBXML2_DL_ADDR=ftp://xmlsoft.org/libxml2/libxml2-$LIBXML2_VERSION.tar.gz
 export LIBXML2_TARBALL_NAME=$(basename "$LIBXML2_DL_ADDR")
 export LIBXML2_FOLDER_NAME="${LIBXML2_TARBALL_NAME%.*.*}"
 
-GETTEXT_VERSION=0.19.7
+GETTEXT_VERSION=0.19.8
 GETTEXT_DL_ADDR=http://ftpmirror.gnu.org/gettext/gettext-$GETTEXT_VERSION.tar.xz
 export GETTEXT_TARBALL_NAME=$(basename "$GETTEXT_DL_ADDR")
 export GETTEXT_FOLDER_NAME="${GETTEXT_TARBALL_NAME%.*.*}"
@@ -40,7 +40,7 @@ LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-$LIBFFI_VERSION.tar.gz
 export LIBFFI_TARBALL_NAME=$(basename "$LIBFFI_DL_ADDR")
 export LIBFFI_FOLDER_NAME="${LIBFFI_TARBALL_NAME%.*.*}"
 
-GLIB_VERSION=2.48.0
+GLIB_VERSION=2.49.2
 GLIB_DL_ADDR=https://download.gnome.org/sources/glib/${GLIB_VERSION%.*}/glib-$GLIB_VERSION.tar.xz
 export GLIB_TARBALL_NAME=$(basename "$GLIB_DL_ADDR")
 export GLIB_FOLDER_NAME="${GLIB_TARBALL_NAME%.*.*}"
@@ -75,12 +75,12 @@ LIBJASPER_DL_ADDR=http://www.ece.uvic.ca/~frodo/jasper/software/jasper-$LIBJASPE
 export LIBJASPER_TARBALL_NAME=$(basename "$LIBJASPER_DL_ADDR")
 export LIBJASPER_FOLDER_NAME="${LIBJASPER_TARBALL_NAME%.*}"
 
-LIBPNG_VERSION=1.6.21
+LIBPNG_VERSION=1.6.23
 LIBPNG_DL_ADDR=https://sourceforge.net/projects/libpng/files/libpng16/$LIBPNG_VERSION/libpng-$LIBPNG_VERSION.tar.xz
 export LIBPNG_TARBALL_NAME=$(basename "$LIBPNG_DL_ADDR")
 export LIBPNG_FOLDER_NAME="${LIBPNG_TARBALL_NAME%.*.*}"
 
-LIBJPEG_TURBO_VERSION=1.4.2
+LIBJPEG_TURBO_VERSION=1.5.0
 LIBJPEG_TURBO_DL_ADDR=https://sourceforge.net/projects/libjpeg-turbo/files/$LIBJPEG_TURBO_VERSION/libjpeg-turbo-$LIBJPEG_TURBO_VERSION.tar.gz
 export LIBJPEG_TURBO_TARBALL_NAME=$(basename "$LIBJPEG_TURBO_DL_ADDR")
 export LIBJPEG_TURBO_FOLDER_NAME="${LIBJPEG_TURBO_TARBALL_NAME%.*.*}"
@@ -90,7 +90,7 @@ LIBTIFF_DL_ADDR=http://download.osgeo.org/libtiff/tiff-$LIBTIFF_VERSION.tar.gz
 export LIBTIFF_TARBALL_NAME=$(basename "$LIBTIFF_DL_ADDR")
 export LIBTIFF_FOLDER_NAME="${LIBTIFF_TARBALL_NAME%.*.*}"
 
-GDK_PIXBUF_VERSION=2.34.0
+GDK_PIXBUF_VERSION=2.35.2
 GDK_PIXBUF_DL_ADDR=https://download.gnome.org/sources/gdk-pixbuf/${GDK_PIXBUF_VERSION%.*}/gdk-pixbuf-$GDK_PIXBUF_VERSION.tar.xz
 export GDK_PIXBUF_TARBALL_NAME=$(basename "$GDK_PIXBUF_DL_ADDR")
 export GDK_PIXBUF_FOLDER_NAME="${GDK_PIXBUF_TARBALL_NAME%.*.*}"
@@ -100,7 +100,7 @@ LIBFREETYPE_DL_ADDR=https://sourceforge.net/projects/freetype/files/freetype2/$L
 export LIBFREETYPE_TARBALL_NAME=$(basename "$LIBFREETYPE_DL_ADDR")
 export LIBFREETYPE_FOLDER_NAME="${LIBFREETYPE_TARBALL_NAME%.*.*}"
 
-LIBFONTCONFIG_VERSION=2.11.95
+LIBFONTCONFIG_VERSION=2.12.0
 LIBFONTCONFIG_DL_ADDR=http://www.freedesktop.org/software/fontconfig/release/fontconfig-$LIBFONTCONFIG_VERSION.tar.bz2
 export LIBFONTCONFIG_TARBALL_NAME=$(basename "$LIBFONTCONFIG_DL_ADDR")
 export LIBFONTCONFIG_FOLDER_NAME="${LIBFONTCONFIG_TARBALL_NAME%.*.*}"
@@ -115,17 +115,17 @@ CAIRO_DL_ADDR=http://cairographics.org/snapshots/cairo-$CAIRO_VERSION.tar.xz
 export CAIRO_TARBALL_NAME=$(basename "$CAIRO_DL_ADDR")
 export CAIRO_FOLDER_NAME="${CAIRO_TARBALL_NAME%.*.*}"
 
-PANGO_VERSION=1.40.0
+PANGO_VERSION=1.40.1
 PANGO_DL_ADDR=https://download.gnome.org/sources/pango/${PANGO_VERSION%.*}/pango-$PANGO_VERSION.tar.xz
 export PANGO_TARBALL_NAME=$(basename "$PANGO_DL_ADDR")
 export PANGO_FOLDER_NAME="${PANGO_TARBALL_NAME%.*.*}"
 
-GTK_VERSION=3.20.2
+GTK_VERSION=3.21.2
 GTK_DL_ADDR=https://download.gnome.org/sources/gtk+/${GTK_VERSION%.*}/gtk+-$GTK_VERSION.tar.xz
 export GTK_TARBALL_NAME=$(basename "$GTK_DL_ADDR")
 export GTK_FOLDER_NAME="${GTK_TARBALL_NAME%.*.*}"
 
-LIBRSVG_VERSION=2.40.15
+LIBRSVG_VERSION=2.40.16
 LIBRSVG_DL_ADDR=https://download.gnome.org/sources/librsvg/${LIBRSVG_VERSION%.*}/librsvg-$LIBRSVG_VERSION.tar.xz
 export LIBRSVG_TARBALL_NAME=$(basename "$LIBRSVG_DL_ADDR")
 export LIBRSVG_FOLDER_NAME="${LIBRSVG_TARBALL_NAME%.*.*}"
@@ -135,17 +135,17 @@ ICON_NAMING_UTILS_DL_ADDR=http://tango.freedesktop.org/releases/icon-naming-util
 export ICON_NAMING_UTILS_TARBALL_NAME=$(basename "$ICON_NAMING_UTILS_DL_ADDR")
 export ICON_NAMING_UTILS_FOLDER_NAME="${ICON_NAMING_UTILS_TARBALL_NAME%.*.*}"
 
-ADWAITA_VERSION=3.20
-ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/$ADWAITA_VERSION/adwaita-icon-theme-$ADWAITA_VERSION.tar.xz
+ADWAITA_VERSION=3.21.2
+ADWAITA_ICON_THEME_DL_ADDR=https://download.gnome.org/sources/adwaita-icon-theme/${ADWAITA_VERSION%.*}/adwaita-icon-theme-$ADWAITA_VERSION.tar.xz
 export ADWAITA_ICON_THEME_TARBALL_NAME=$(basename "$ADWAITA_ICON_THEME_DL_ADDR")
 export ADWAITA_FOLDER_NAME="${ADWAITA_ICON_THEME_TARBALL_NAME%.*.*}"
 
-LIBSIGCPP_VERSION=2.99.3
+LIBSIGCPP_VERSION=2.99.6
 LIBSIGCPP_DL_ADDR=https://download.gnome.org/sources/libsigc++/${LIBSIGCPP_VERSION%.*}/libsigc++-$LIBSIGCPP_VERSION.tar.xz
 export LIBSIGCPP_TARBALL_NAME=$(basename "$LIBSIGCPP_DL_ADDR")
 export LIBSIGCPP_FOLDER_NAME="${LIBSIGCPP_TARBALL_NAME%.*.*}"
 
-GLIBMM_VERSION=2.48.1
+GLIBMM_VERSION=2.49.1
 GLIBMM_DL_ADDR=https://download.gnome.org/sources/glibmm/${GLIBMM_VERSION%.*}/glibmm-$GLIBMM_VERSION.tar.xz
 export GLIBMM_TARBALL_NAME=$(basename "$GLIBMM_DL_ADDR")
 export GLIBMM_FOLDER_NAME="${GLIBMM_TARBALL_NAME%.*.*}"
@@ -165,7 +165,7 @@ PANGOMM_DL_ADDR=https://download.gnome.org/sources/pangomm/${PANGOMM_VERSION%.*}
 export PANGOMM_TARBALL_NAME=$(basename "$PANGOMM_DL_ADDR")
 export PANGOMM_FOLDER_NAME="${PANGOMM_TARBALL_NAME%.*.*}"
 
-GTKMM_VERSION=3.20.0
+GTKMM_VERSION=3.21.2
 GTKMM_DL_ADDR=https://download.gnome.org/sources/gtkmm/${GTKMM_VERSION%.*}/gtkmm-$GTKMM_VERSION.tar.xz
 export GTKMM_TARBALL_NAME=$(basename "$GTKMM_DL_ADDR")
 export GTKMM_FOLDER_NAME="${GTKMM_TARBALL_NAME%.*.*}"

@@ -12,11 +12,19 @@ fi
 
 function check_existance()
 {
+    set +e
     if [ ! -f $1 ]
     then
         wget --no-check-certificate -O $1 $2
     fi
-    if [ "$?" -ne 0 ]; then echo Failed to download $1.; read; exit 1; fi
+    if [ "$?" -ne 0 ]
+    then
+        set -e
+        rm $1
+        echo Failed to download $1.
+        exit 1
+    fi
+    set -e
 }
 
 check_existance zlib/$ZLIB_TARBALL_NAME $ZLIB_DL_ADDR

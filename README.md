@@ -1,9 +1,9 @@
 # GTK+ for Windows
 
 ## Version
-GTK+  - 3.20.2
+GTK+  - 3.21.2
 
-gtkmm - 3.20.0
+gtkmm - 3.21.2
 
 ## Introduction
 
