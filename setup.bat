@@ -159,14 +159,14 @@ if exist C:\MinGW (
 )
 echo.
 echo Which compliler do you prefer? ^(64-bit compilers are not tested^)
-echo 1. MinGW-w64 GCC 5.3.0, i686,   posix, sjlj
-echo 2. MinGW-w64 GCC 5.3.0, i686,   posix, dwarf
-echo 3. MinGW-w64 GCC 5.3.0, i686,   win32, sjlj
-echo 4. MinGW-w64 GCC 5.3.0, i686,   win32, dwarf
-echo 5. MinGW-w64 GCC 5.3.0, x86_64, posix, sjlj
-echo 6. MinGW-w64 GCC 5.3.0, x86_64, posix, seh
-echo 7. MinGW-w64 GCC 5.3.0, x86_64, win32, sjlj
-echo 8. MinGW-w64 GCC 5.3.0, x86_64, win32, seh
+echo 1. MinGW-w64 GCC 6.2.0, i686,   posix, sjlj
+echo 2. MinGW-w64 GCC 6.2.0, i686,   posix, dwarf
+echo 3. MinGW-w64 GCC 6.2.0, i686,   win32, sjlj
+echo 4. MinGW-w64 GCC 6.2.0, i686,   win32, dwarf
+echo 5. MinGW-w64 GCC 6.2.0, x86_64, posix, sjlj
+echo 6. MinGW-w64 GCC 6.2.0, x86_64, posix, seh
+echo 7. MinGW-w64 GCC 6.2.0, x86_64, win32, sjlj
+echo 8. MinGW-w64 GCC 6.2.0, x86_64, win32, seh
 set /p compiler=
 if %compiler% LSS 1 (
     echo Please choose 1-8.
@@ -180,11 +180,11 @@ set name=MinGW-w64
 set folder=MinGW-w64\
 rem 32-bit or 64-bit
 if %compiler% GEQ 1 if %compiler% LEQ 4 (
-    set filename=i686-5.3.0-release-
-    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win32/Personal%%20Builds/mingw-builds/5.3.0/
+    set filename=i686-6.2.0-release-
+    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win32/Personal%%20Builds/mingw-builds/6.2.0/
 ) else (
-    set filename=x86_64-5.3.0-release-
-    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win64/Personal%%20Builds/mingw-builds/5.3.0/
+    set filename=x86_64-6.2.0-release-
+    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win64/Personal%%20Builds/mingw-builds/6.2.0/
 )
 rem posix or win32
 if %compiler% GEQ 1 if %compiler% LEQ 2 (
@@ -205,35 +205,35 @@ if %compiler% GEQ 7 if %compiler% LEQ 8 (
 )
 rem sjlj or dwarf or seh
 if %compiler% EQU 1 (
-    set filename=%filename%sjlj-rt_v4-rev0.7z
+    set filename=%filename%sjlj-rt_v5-rev1.7z
     set dladdr=%dladdr%sjlj/!filename!/download
 )
 if %compiler% EQU 3 (
-    set filename=%filename%sjlj-rt_v4-rev0.7z
+    set filename=%filename%sjlj-rt_v5-rev1.7z
     set dladdr=%dladdr%sjlj/!filename!/download
 )
 if %compiler% EQU 5 (
-    set filename=%filename%sjlj-rt_v4-rev0.7z
+    set filename=%filename%sjlj-rt_v5-rev1.7z
     set dladdr=%dladdr%sjlj/!filename!/download
 )
 if %compiler% EQU 7 (
-    set filename=%filename%sjlj-rt_v4-rev0.7z
+    set filename=%filename%sjlj-rt_v5-rev1.7z
     set dladdr=%dladdr%sjlj/!filename!/download
 )
 if %compiler% EQU 2 (
-    set filename=%filename%dwarf-rt_v4-rev0.7z
+    set filename=%filename%dwarf-rt_v5-rev1.7z
     set dladdr=%dladdr%dwarf/!filename!/download
 )
 if %compiler% EQU 4 (
-    set filename=%filename%dwarf-rt_v4-rev0.7z
+    set filename=%filename%dwarf-rt_v5-rev1.7z
     set dladdr=%dladdr%dwarf/!filename!/download
 )
 if %compiler% EQU 6 (
-    set filename=%filename%seh-rt_v4-rev0.7z
+    set filename=%filename%seh-rt_v5-rev1.7z
     set dladdr=%dladdr%seh/!filename!/download
 )
 if %compiler% EQU 8 (
-    set filename=%filename%seh-rt_v4-rev0.7z
+    set filename=%filename%seh-rt_v5-rev1.7z
     set dladdr=%dladdr%seh/!filename!/download
 )
 echo | set /p dummyvar=Checking whether MinGW-w64 exists.....
@@ -253,23 +253,6 @@ if %compiler% GEQ 1 if %compiler% LEQ 4 (
 )
 rem ******************************** ansi **************************************
 
-rem ******************************** NASM **************************************
-rem NASM is needed to build libjpeg-turbo.
-set name="NASM"
-set folder=Other\
-set filename=nasm-2.12.01-win32.zip
-set dladdr=http://www.nasm.us/pub/nasm/releasebuilds/2.12.01/win32/nasm-2.12.01-win32.zip
-echo | set /p dummyvar=Checking whether NASM exists..........
-call:CHECK
-if errorlevel 1 pause && exit /B 1
-Tools\7za.exe x -ocache Other\!filename! 
-if %compiler% GEQ 1 if %compiler% LEQ 4 (
-    copy cache\nasm-2.12.01\nasm.exe C:\MinGW\mingw32\bin
-) else (
-    copy cache\nasm-2.12.01\nasm.exe C:\MinGW\mingw64\bin
-)
-rem ******************************** NASM **************************************
-
 rem ****************************** DroidSans ***********************************
 Tools\7za.exe x -ocache Other\DroidSans.7z
 copy cache\DroidSans.ttf %SYSTEMROOT%\Fonts
@@ -287,10 +270,10 @@ mkdir c:\msys\%PREFIX%\lib\pkgconfig
 mkdir c:\msys\%PREFIX%\share
 echo export PREFIX="/%PREFIX%">> c:\msys\etc\profile
 echo export PATH="$PATH:/%PREFIX%/bin">> c:\msys\etc\profile
-echo export CFLAGS="-I/%PREFIX%/include">> c:\msys\etc\profile
-echo export CPPFLAGS="-I/%PREFIX%/include">> c:\msys\etc\profile
-echo export LDFLAGS="-L/%PREFIX%/lib">> c:\msys\etc\profile
-echo export PKG_CONFIG_PATH="/%PREFIX%/lib/pkgconfig">> c:\msys\etc\profile
+echo export CFLAGS="-I/%PREFIX%/include -I/usr/local/include">> c:\msys\etc\profile
+echo export CPPFLAGS="-I/%PREFIX%/include -I/usr/local/include">> c:\msys\etc\profile
+echo export LDFLAGS="-L/%PREFIX%/lib -L/usr/local/lib">> c:\msys\etc\profile
+echo export PKG_CONFIG_PATH="/%PREFIX%/lib/pkgconfig:/usr/local/lib/pkgconfig">> c:\msys\etc\profile
 echo export XDG_DATA_DIRS="/%PREFIX%/share">> c:\msys\etc\profile
 rem 32-bit or 64-bit
 if %compiler% GEQ 1 if %compiler% LEQ 4 (

@@ -55,13 +55,7 @@ check_existance util-macros/$UTIL_MACROS_TARBALL_NAME $UTIL_MACROS_DL_ADDR
 
 check_existance atk/$ATK_TARBALL_NAME $ATK_DL_ADDR
 
-check_existance libjasper/$LIBJASPER_TARBALL_NAME $LIBJASPER_DL_ADDR
-
 check_existance libpng/$LIBPNG_TARBALL_NAME $LIBPNG_DL_ADDR
-
-check_existance libjpeg-turbo/$LIBJPEG_TURBO_TARBALL_NAME $LIBJPEG_TURBO_DL_ADDR
-
-check_existance libtiff/$LIBTIFF_TARBALL_NAME $LIBTIFF_DL_ADDR
 
 check_existance gdk-pixbuf/$GDK_PIXBUF_TARBALL_NAME $GDK_PIXBUF_DL_ADDR
 

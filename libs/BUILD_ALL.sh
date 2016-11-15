@@ -38,11 +38,8 @@ fi
 ./libepoxy.sh
 
 ./atk.sh
-./libjasper.sh
 
 ./libpng.sh
-./libjpeg-turbo.sh
-./libtiff.sh
 ./gdk-pixbuf.sh
 
 ./libfreetype.sh
