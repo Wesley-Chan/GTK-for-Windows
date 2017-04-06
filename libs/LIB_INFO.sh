@@ -71,7 +71,7 @@ export ATK_TARBALL_NAME=$(basename "$ATK_DL_ADDR")
 export ATK_FOLDER_NAME="${ATK_TARBALL_NAME%.*.*}"
 
 LIBPNG_VERSION=1.6.26
-LIBPNG_DL_ADDR=https://sourceforge.net/projects/libpng/files/libpng16/$LIBPNG_VERSION/libpng-$LIBPNG_VERSION.tar.xz
+LIBPNG_DL_ADDR=https://sourceforge.net/projects/libpng/files/libpng16/older-releases/$LIBPNG_VERSION/libpng-$LIBPNG_VERSION.tar.xz
 export LIBPNG_TARBALL_NAME=$(basename "$LIBPNG_DL_ADDR")
 export LIBPNG_FOLDER_NAME="${LIBPNG_TARBALL_NAME%.*.*}"
 
