@@ -59,6 +59,8 @@ check_existance libpng/$LIBPNG_TARBALL_NAME $LIBPNG_DL_ADDR
 
 check_existance gdk-pixbuf/$GDK_PIXBUF_TARBALL_NAME $GDK_PIXBUF_DL_ADDR
 
+check_existance gperf/$GPERF_TARBALL_NAME $GPERF_DL_ADDR
+
 check_existance libfreetype/$LIBFREETYPE_TARBALL_NAME $LIBFREETYPE_DL_ADDR
 
 check_existance libfontconfig/$LIBFONTCONFIG_TARBALL_NAME $LIBFONTCONFIG_DL_ADDR

@@ -159,14 +159,14 @@ if exist C:\MinGW (
 )
 echo.
 echo Which compliler do you prefer? ^(64-bit compilers are not tested^)
-echo 1. MinGW-w64 GCC 6.2.0, i686,   posix, sjlj
-echo 2. MinGW-w64 GCC 6.2.0, i686,   posix, dwarf
-echo 3. MinGW-w64 GCC 6.2.0, i686,   win32, sjlj
-echo 4. MinGW-w64 GCC 6.2.0, i686,   win32, dwarf
-echo 5. MinGW-w64 GCC 6.2.0, x86_64, posix, sjlj
-echo 6. MinGW-w64 GCC 6.2.0, x86_64, posix, seh
-echo 7. MinGW-w64 GCC 6.2.0, x86_64, win32, sjlj
-echo 8. MinGW-w64 GCC 6.2.0, x86_64, win32, seh
+echo 1. MinGW-w64 GCC 7.1.0, i686,   posix, sjlj
+echo 2. MinGW-w64 GCC 7.1.0, i686,   posix, dwarf
+echo 3. MinGW-w64 GCC 7.1.0, i686,   win32, sjlj
+echo 4. MinGW-w64 GCC 7.1.0, i686,   win32, dwarf
+echo 5. MinGW-w64 GCC 7.1.0, x86_64, posix, sjlj
+echo 6. MinGW-w64 GCC 7.1.0, x86_64, posix, seh
+echo 7. MinGW-w64 GCC 7.1.0, x86_64, win32, sjlj
+echo 8. MinGW-w64 GCC 7.1.0, x86_64, win32, seh
 set /p compiler=
 if %compiler% LSS 1 (
     echo Please choose 1-8.
@@ -180,11 +180,11 @@ set name=MinGW-w64
 set folder=MinGW-w64\
 rem 32-bit or 64-bit
 if %compiler% GEQ 1 if %compiler% LEQ 4 (
-    set filename=i686-6.2.0-release-
-    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win32/Personal%%20Builds/mingw-builds/6.2.0/
+    set filename=i686-7.1.0-release-
+    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win32/Personal%%20Builds/mingw-builds/7.1.0/
 ) else (
-    set filename=x86_64-6.2.0-release-
-    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win64/Personal%%20Builds/mingw-builds/6.2.0/
+    set filename=x86_64-7.1.0-release-
+    set dladdr=https://sourceforge.net/projects/mingw-w64/files/Toolchains%%20targetting%%20Win64/Personal%%20Builds/mingw-builds/7.1.0/
 )
 rem posix or win32
 if %compiler% GEQ 1 if %compiler% LEQ 2 (

@@ -42,6 +42,8 @@ fi
 ./libpng.sh
 ./gdk-pixbuf.sh
 
+./gperf.sh
+
 ./libfreetype.sh
 ./libfontconfig.sh
 
@@ -54,10 +56,6 @@ fi
 
 ./icon-naming-utils.sh
 ./adwaita-icon-theme.sh
-
-echo GTK+ has been built. Continue to build gtkmm? [y/n]
-read ans
-if [ $ans == 'n' ]; then exit 0; fi
 
 ./libsigc++.sh
 ./glibmm.sh
