@@ -40,7 +40,7 @@ LIBFFI_DL_ADDR=ftp://sourceware.org/pub/libffi/libffi-$LIBFFI_VERSION.tar.gz
 export LIBFFI_TARBALL_NAME=$(basename "$LIBFFI_DL_ADDR")
 export LIBFFI_FOLDER_NAME="${LIBFFI_TARBALL_NAME%.*.*}"
 
-GLIB_VERSION=2.53.7
+GLIB_VERSION=2.54.0
 GLIB_DL_ADDR=https://download.gnome.org/sources/glib/${GLIB_VERSION%.*}/glib-$GLIB_VERSION.tar.xz
 export GLIB_TARBALL_NAME=$(basename "$GLIB_DL_ADDR")
 export GLIB_FOLDER_NAME="${GLIB_TARBALL_NAME%.*.*}"

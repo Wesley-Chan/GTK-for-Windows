@@ -1,0 +1,18 @@
+--- Makefile.in
++++ Makefile.in
+@@ -1902,7 +1902,6 @@ s-enum-types-h: $(headers) Makefile
+ 			--vhead "GType @enum_name@_get_type (void);\n#define RSVG_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n" 	\
+ 			--ftail "G_END_DECLS\n\n#endif /* __LIBRSVG_ENUM_TYPES_H__ */" \
+ 		$(headers) ) > tmp-librsvg-enum-types.h \
+-	&& (cmp -s tmp-librsvg-enum-types.h librsvg-enum-types.h || cp tmp-librsvg-enum-types.h librsvg-enum-types.h ) \
+ 	&& rm -f tmp-librsvg-enum-types.h	\
+ 	&& echo timestamp > $(@F)
+ 
+@@ -1917,7 +1916,6 @@ s-enum-types-c: $(headers) Makefile
+ 			--vprod "      { @VALUENAME@, \"@VALUENAME@\", \"@valuenick@\" }," \
+ 			--vtail "      { 0, NULL, NULL }\n    };\n    etype = g_@type@_register_static (\"@EnumName@\", values);\n  }\n  return etype;\n}\n" \
+ 		$(headers) ) > tmp-librsvg-enum-types.c \
+-	&& (cmp -s tmp-librsvg-enum-types.c librsvg-enum-types.c || cp tmp-librsvg-enum-types.c librsvg-enum-types.c ) \
+ 	&& rm -f tmp-librsvg-enum-types.c \
+ 	&& echo timestamp > $(@F)
+ 
